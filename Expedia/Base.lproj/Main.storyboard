@@ -13,14 +13,46 @@
         <!--일정-->
         <scene sceneID="9K3-QU-ptz">
             <objects>
-                <viewController id="fCR-DH-Sdt" sceneMemberID="viewController">
+                <viewController id="fCR-DH-Sdt" customClass="ScheduleViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aSO-0M-hKb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bay-DU-PWX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdc-nO-Pfb">
+                                        <rect key="frame" x="185.5" y="0.0" width="43.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QYf-Ie-AMX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jdc-nO-Pfb" firstAttribute="centerX" secondItem="bay-DU-PWX" secondAttribute="centerX" id="W2k-di-MgX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jdc-nO-Pfb" secondAttribute="bottom" id="gOi-ex-QJv"/>
+                                    <constraint firstItem="Jdc-nO-Pfb" firstAttribute="top" secondItem="bay-DU-PWX" secondAttribute="top" id="jgu-V6-JaF"/>
+                                    <constraint firstAttribute="height" constant="50" id="k8U-4v-4Yv"/>
+                                    <constraint firstItem="Jdc-nO-Pfb" firstAttribute="centerY" secondItem="bay-DU-PWX" secondAttribute="centerY" id="l31-9u-xci"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a6j-1h-eR0" firstAttribute="trailing" secondItem="bay-DU-PWX" secondAttribute="trailing" id="Fej-Pf-SSB"/>
+                            <constraint firstItem="bay-DU-PWX" firstAttribute="top" secondItem="a6j-1h-eR0" secondAttribute="top" id="fUh-a8-GWT"/>
+                            <constraint firstItem="bay-DU-PWX" firstAttribute="leading" secondItem="a6j-1h-eR0" secondAttribute="leading" id="rQT-4u-hEW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a6j-1h-eR0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="일정" id="uMI-HQ-XDc"/>
+                    <connections>
+                        <outlet property="topLabelView" destination="bay-DU-PWX" id="G6R-N2-BND"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OQ-K2-AbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,9 +109,6 @@
                                     <color key="titleColor" red="0.050980392156862744" green="0.047058823529411764" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0I0-aV-HnR">
-                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -88,16 +117,13 @@
                             <constraint firstItem="amP-mP-JDn" firstAttribute="leading" secondItem="7zK-qP-bNT" secondAttribute="leading" id="9u8-og-7cb"/>
                             <constraint firstItem="amP-mP-JDn" firstAttribute="top" secondItem="R34-uV-reZ" secondAttribute="bottom" id="SCm-DJ-aJz"/>
                             <constraint firstItem="R34-uV-reZ" firstAttribute="top" secondItem="7zK-qP-bNT" secondAttribute="top" id="UOH-6d-TAY"/>
-                            <constraint firstItem="0I0-aV-HnR" firstAttribute="top" secondItem="amP-mP-JDn" secondAttribute="bottom" id="j29-mR-ACH"/>
                             <constraint firstItem="7zK-qP-bNT" firstAttribute="trailing" secondItem="R34-uV-reZ" secondAttribute="trailing" id="oPR-Cj-nUI"/>
-                            <constraint firstItem="0I0-aV-HnR" firstAttribute="leading" secondItem="7zK-qP-bNT" secondAttribute="leading" id="u1m-XL-A3r"/>
-                            <constraint firstItem="7zK-qP-bNT" firstAttribute="bottom" secondItem="0I0-aV-HnR" secondAttribute="bottom" id="vTe-US-BEZ"/>
-                            <constraint firstItem="7zK-qP-bNT" firstAttribute="trailing" secondItem="0I0-aV-HnR" secondAttribute="trailing" id="yNv-Se-gHz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7zK-qP-bNT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="여행 예약" id="AdA-9G-JIO"/>
                     <connections>
+                        <outlet property="reservateHotelButton" destination="amP-mP-JDn" id="Jlh-d0-jRj"/>
                         <outlet property="topLogoView" destination="R34-uV-reZ" id="sHL-cm-4KN"/>
                     </connections>
                 </viewController>
