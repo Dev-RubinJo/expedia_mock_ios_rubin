@@ -16,6 +16,9 @@
 		43546EB02251C08A005A0AB7 /* ExpediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */; };
 		43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EBD22523605005A0AB7 /* BasicRequired.swift */; };
 		43546ECA225247B8005A0AB7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EC9225247B8005A0AB7 /* ScheduleViewController.swift */; };
+		A2B34D64DC4FEC8DC0BBC5CB /* Pods_ExpediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C416573140C4A01AFC4D09E4 /* Pods_ExpediaUITests.framework */; };
+		ADF06054F8E02AC0CE41BA26 /* Pods_ExpediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CC6EDE197E229CE6727F77 /* Pods_ExpediaTests.framework */; };
+		BE9026435F7FF3F07733BA88 /* Pods_Expedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A19F3363A26ABBE0CFA47 /* Pods_Expedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		378C09F7F89F0B9622D594A1 /* Pods-Expedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expedia.release.xcconfig"; path = "Target Support Files/Pods-Expedia/Pods-Expedia.release.xcconfig"; sourceTree = "<group>"; };
 		43546E8C2251C087005A0AB7 /* Expedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43546E8F2251C087005A0AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43546E912251C087005A0AB7 /* TripReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripReservationViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 		43546EB12251C08A005A0AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43546EBD22523605005A0AB7 /* BasicRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequired.swift; sourceTree = "<group>"; };
 		43546EC9225247B8005A0AB7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		5CA5734601FFAD9FE7212535 /* Pods-Expedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expedia.debug.xcconfig"; path = "Target Support Files/Pods-Expedia/Pods-Expedia.debug.xcconfig"; sourceTree = "<group>"; };
+		8AA5024A2DBF299A76E4DE23 /* Pods-ExpediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaTests.release.xcconfig"; path = "Target Support Files/Pods-ExpediaTests/Pods-ExpediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		949CE30D6BDD36085C79E80B /* Pods-ExpediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaTests.debug.xcconfig"; path = "Target Support Files/Pods-ExpediaTests/Pods-ExpediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A72A19F3363A26ABBE0CFA47 /* Pods_Expedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C416573140C4A01AFC4D09E4 /* Pods_ExpediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7E3FBFD38A929E2E8E4E42 /* Pods-ExpediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaUITests.release.xcconfig"; path = "Target Support Files/Pods-ExpediaUITests/Pods-ExpediaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F0CC6EDE197E229CE6727F77 /* Pods_ExpediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BC6D27600D15E7EAF93817 /* Pods-ExpediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExpediaUITests/Pods-ExpediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9026435F7FF3F07733BA88 /* Pods_Expedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF06054F8E02AC0CE41BA26 /* Pods_ExpediaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B34D64DC4FEC8DC0BBC5CB /* Pods_ExpediaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				43546EA32251C08A005A0AB7 /* ExpediaTests */,
 				43546EAE2251C08A005A0AB7 /* ExpediaUITests */,
 				43546E8D2251C087005A0AB7 /* Products */,
+				475F70627A80C556024BE110 /* Pods */,
+				B3AE308DF50206709E1F0A0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +164,30 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		475F70627A80C556024BE110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CA5734601FFAD9FE7212535 /* Pods-Expedia.debug.xcconfig */,
+				378C09F7F89F0B9622D594A1 /* Pods-Expedia.release.xcconfig */,
+				949CE30D6BDD36085C79E80B /* Pods-ExpediaTests.debug.xcconfig */,
+				8AA5024A2DBF299A76E4DE23 /* Pods-ExpediaTests.release.xcconfig */,
+				F5BC6D27600D15E7EAF93817 /* Pods-ExpediaUITests.debug.xcconfig */,
+				CD7E3FBFD38A929E2E8E4E42 /* Pods-ExpediaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3AE308DF50206709E1F0A0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A72A19F3363A26ABBE0CFA47 /* Pods_Expedia.framework */,
+				F0CC6EDE197E229CE6727F77 /* Pods_ExpediaTests.framework */,
+				C416573140C4A01AFC4D09E4 /* Pods_ExpediaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43546EB42251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "Expedia" */;
 			buildPhases = (
+				49447F5726060C0B7AD93790 /* [CP] Check Pods Manifest.lock */,
 				43546E882251C087005A0AB7 /* Sources */,
 				43546E892251C087005A0AB7 /* Frameworks */,
 				43546E8A2251C087005A0AB7 /* Resources */,
+				4A41CBCDFCA76F9F2EFC22B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43546EB72251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "ExpediaTests" */;
 			buildPhases = (
+				73B329CFA4FA6A07A277C8E1 /* [CP] Check Pods Manifest.lock */,
 				43546E9C2251C08A005A0AB7 /* Sources */,
 				43546E9D2251C08A005A0AB7 /* Frameworks */,
 				43546E9E2251C08A005A0AB7 /* Resources */,
@@ -189,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43546EBA2251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "ExpediaUITests" */;
 			buildPhases = (
+				DEF117D64EC624B4044D9CAB /* [CP] Check Pods Manifest.lock */,
 				43546EA72251C08A005A0AB7 /* Sources */,
 				43546EA82251C08A005A0AB7 /* Frameworks */,
 				43546EA92251C08A005A0AB7 /* Resources */,
@@ -272,6 +317,101 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49447F5726060C0B7AD93790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Expedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A41CBCDFCA76F9F2EFC22B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expedia/Pods-Expedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Expedia/Pods-Expedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73B329CFA4FA6A07A277C8E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF117D64EC624B4044D9CAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpediaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43546E882251C087005A0AB7 /* Sources */ = {
@@ -454,6 +594,7 @@
 		};
 		43546EB52251C08A005A0AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA5734601FFAD9FE7212535 /* Pods-Expedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +613,7 @@
 		};
 		43546EB62251C08A005A0AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378C09F7F89F0B9622D594A1 /* Pods-Expedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +632,7 @@
 		};
 		43546EB82251C08A005A0AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949CE30D6BDD36085C79E80B /* Pods-ExpediaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +654,7 @@
 		};
 		43546EB92251C08A005A0AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA5024A2DBF299A76E4DE23 /* Pods-ExpediaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +676,7 @@
 		};
 		43546EBB2251C08A005A0AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5BC6D27600D15E7EAF93817 /* Pods-ExpediaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +697,7 @@
 		};
 		43546EBC2251C08A005A0AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7E3FBFD38A929E2E8E4E42 /* Pods-ExpediaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
