@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43546E902251C087005A0AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546E8F2251C087005A0AB7 /* AppDelegate.swift */; };
+		43546E922251C087005A0AB7 /* TripReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546E912251C087005A0AB7 /* TripReservationViewController.swift */; };
+		43546E952251C087005A0AB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43546E932251C087005A0AB7 /* Main.storyboard */; };
+		43546E972251C08A005A0AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43546E962251C08A005A0AB7 /* Assets.xcassets */; };
+		43546E9A2251C08A005A0AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43546E982251C08A005A0AB7 /* LaunchScreen.storyboard */; };
+		43546EA52251C08A005A0AB7 /* ExpediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EA42251C08A005A0AB7 /* ExpediaTests.swift */; };
+		43546EB02251C08A005A0AB7 /* ExpediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */; };
+		43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EBD22523605005A0AB7 /* BasicRequired.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43546EA12251C08A005A0AB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43546E842251C087005A0AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43546E8B2251C087005A0AB7;
+			remoteInfo = Expedia;
+		};
+		43546EAC2251C08A005A0AB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43546E842251C087005A0AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43546E8B2251C087005A0AB7;
+			remoteInfo = Expedia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43546E8C2251C087005A0AB7 /* Expedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43546E8F2251C087005A0AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43546E912251C087005A0AB7 /* TripReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripReservationViewController.swift; sourceTree = "<group>"; };
+		43546E942251C087005A0AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43546E962251C08A005A0AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43546E992251C08A005A0AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43546E9B2251C08A005A0AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43546EA02251C08A005A0AB7 /* ExpediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43546EA42251C08A005A0AB7 /* ExpediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpediaTests.swift; sourceTree = "<group>"; };
+		43546EA62251C08A005A0AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43546EAB2251C08A005A0AB7 /* ExpediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpediaUITests.swift; sourceTree = "<group>"; };
+		43546EB12251C08A005A0AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43546EBD22523605005A0AB7 /* BasicRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequired.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43546E892251C087005A0AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43546E9D2251C08A005A0AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43546EA82251C08A005A0AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43546E832251C087005A0AB7 = {
+			isa = PBXGroup;
+			children = (
+				43546E8E2251C087005A0AB7 /* Expedia */,
+				43546EA32251C08A005A0AB7 /* ExpediaTests */,
+				43546EAE2251C08A005A0AB7 /* ExpediaUITests */,
+				43546E8D2251C087005A0AB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43546E8D2251C087005A0AB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43546E8C2251C087005A0AB7 /* Expedia.app */,
+				43546EA02251C08A005A0AB7 /* ExpediaTests.xctest */,
+				43546EAB2251C08A005A0AB7 /* ExpediaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43546E8E2251C087005A0AB7 /* Expedia */ = {
+			isa = PBXGroup;
+			children = (
+				43546E8F2251C087005A0AB7 /* AppDelegate.swift */,
+				43546E912251C087005A0AB7 /* TripReservationViewController.swift */,
+				43546E932251C087005A0AB7 /* Main.storyboard */,
+				43546E962251C08A005A0AB7 /* Assets.xcassets */,
+				43546E982251C08A005A0AB7 /* LaunchScreen.storyboard */,
+				43546E9B2251C08A005A0AB7 /* Info.plist */,
+				43546EBD22523605005A0AB7 /* BasicRequired.swift */,
+			);
+			path = Expedia;
+			sourceTree = "<group>";
+		};
+		43546EA32251C08A005A0AB7 /* ExpediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				43546EA42251C08A005A0AB7 /* ExpediaTests.swift */,
+				43546EA62251C08A005A0AB7 /* Info.plist */,
+			);
+			path = ExpediaTests;
+			sourceTree = "<group>";
+		};
+		43546EAE2251C08A005A0AB7 /* ExpediaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */,
+				43546EB12251C08A005A0AB7 /* Info.plist */,
+			);
+			path = ExpediaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43546E8B2251C087005A0AB7 /* Expedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43546EB42251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "Expedia" */;
+			buildPhases = (
+				43546E882251C087005A0AB7 /* Sources */,
+				43546E892251C087005A0AB7 /* Frameworks */,
+				43546E8A2251C087005A0AB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Expedia;
+			productName = Expedia;
+			productReference = 43546E8C2251C087005A0AB7 /* Expedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43546E9F2251C08A005A0AB7 /* ExpediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43546EB72251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "ExpediaTests" */;
+			buildPhases = (
+				43546E9C2251C08A005A0AB7 /* Sources */,
+				43546E9D2251C08A005A0AB7 /* Frameworks */,
+				43546E9E2251C08A005A0AB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43546EA22251C08A005A0AB7 /* PBXTargetDependency */,
+			);
+			name = ExpediaTests;
+			productName = ExpediaTests;
+			productReference = 43546EA02251C08A005A0AB7 /* ExpediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43546EAA2251C08A005A0AB7 /* ExpediaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43546EBA2251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "ExpediaUITests" */;
+			buildPhases = (
+				43546EA72251C08A005A0AB7 /* Sources */,
+				43546EA82251C08A005A0AB7 /* Frameworks */,
+				43546EA92251C08A005A0AB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43546EAD2251C08A005A0AB7 /* PBXTargetDependency */,
+			);
+			name = ExpediaUITests;
+			productName = ExpediaUITests;
+			productReference = 43546EAB2251C08A005A0AB7 /* ExpediaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43546E842251C087005A0AB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "YooBin Jo";
+				TargetAttributes = {
+					43546E8B2251C087005A0AB7 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					43546E9F2251C08A005A0AB7 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 43546E8B2251C087005A0AB7;
+					};
+					43546EAA2251C08A005A0AB7 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 43546E8B2251C087005A0AB7;
+					};
+				};
+			};
+			buildConfigurationList = 43546E872251C087005A0AB7 /* Build configuration list for PBXProject "Expedia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43546E832251C087005A0AB7;
+			productRefGroup = 43546E8D2251C087005A0AB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43546E8B2251C087005A0AB7 /* Expedia */,
+				43546E9F2251C08A005A0AB7 /* ExpediaTests */,
+				43546EAA2251C08A005A0AB7 /* ExpediaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43546E8A2251C087005A0AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43546E9A2251C08A005A0AB7 /* LaunchScreen.storyboard in Resources */,
+				43546E972251C08A005A0AB7 /* Assets.xcassets in Resources */,
+				43546E952251C087005A0AB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43546E9E2251C08A005A0AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43546EA92251C08A005A0AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43546E882251C087005A0AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43546E922251C087005A0AB7 /* TripReservationViewController.swift in Sources */,
+				43546E902251C087005A0AB7 /* AppDelegate.swift in Sources */,
+				43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43546E9C2251C08A005A0AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43546EA52251C08A005A0AB7 /* ExpediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43546EA72251C08A005A0AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43546EB02251C08A005A0AB7 /* ExpediaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43546EA22251C08A005A0AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43546E8B2251C087005A0AB7 /* Expedia */;
+			targetProxy = 43546EA12251C08A005A0AB7 /* PBXContainerItemProxy */;
+		};
+		43546EAD2251C08A005A0AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43546E8B2251C087005A0AB7 /* Expedia */;
+			targetProxy = 43546EAC2251C08A005A0AB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43546E932251C087005A0AB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43546E942251C087005A0AB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43546E982251C08A005A0AB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43546E992251C08A005A0AB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43546EB22251C08A005A0AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43546EB32251C08A005A0AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43546EB52251C08A005A0AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9MTC983FS;
+				INFOPLIST_FILE = Expedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rubin.Expedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43546EB62251C08A005A0AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9MTC983FS;
+				INFOPLIST_FILE = Expedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rubin.Expedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43546EB82251C08A005A0AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9MTC983FS;
+				INFOPLIST_FILE = ExpediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rubin.ExpediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Expedia.app/Expedia";
+			};
+			name = Debug;
+		};
+		43546EB92251C08A005A0AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9MTC983FS;
+				INFOPLIST_FILE = ExpediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rubin.ExpediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Expedia.app/Expedia";
+			};
+			name = Release;
+		};
+		43546EBB2251C08A005A0AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9MTC983FS;
+				INFOPLIST_FILE = ExpediaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rubin.ExpediaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Expedia;
+			};
+			name = Debug;
+		};
+		43546EBC2251C08A005A0AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9MTC983FS;
+				INFOPLIST_FILE = ExpediaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rubin.ExpediaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Expedia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43546E872251C087005A0AB7 /* Build configuration list for PBXProject "Expedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43546EB22251C08A005A0AB7 /* Debug */,
+				43546EB32251C08A005A0AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43546EB42251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "Expedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43546EB52251C08A005A0AB7 /* Debug */,
+				43546EB62251C08A005A0AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43546EB72251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "ExpediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43546EB82251C08A005A0AB7 /* Debug */,
+				43546EB92251C08A005A0AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43546EBA2251C08A005A0AB7 /* Build configuration list for PBXNativeTarget "ExpediaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43546EBB2251C08A005A0AB7 /* Debug */,
+				43546EBC2251C08A005A0AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43546E842251C087005A0AB7 /* Project object */;
+}

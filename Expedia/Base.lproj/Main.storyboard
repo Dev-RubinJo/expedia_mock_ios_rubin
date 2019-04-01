@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lT2-uR-sJl">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--일정-->
+        <scene sceneID="9K3-QU-ptz">
+            <objects>
+                <viewController id="fCR-DH-Sdt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSO-0M-hKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a6j-1h-eR0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="일정" id="uMI-HQ-XDc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OQ-K2-AbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="7"/>
+        </scene>
+        <!--계정-->
+        <scene sceneID="Xzr-IO-mIW">
+            <objects>
+                <viewController id="RVI-kj-69H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="boM-Ax-rjd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rIf-CI-ylv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="계정" id="k6K-Ro-AbI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OW1-Ey-DrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="923"/>
+        </scene>
+        <!--여행 예약-->
+        <scene sceneID="vOU-Ob-8vj">
+            <objects>
+                <viewController id="9OD-QG-sqk" customClass="TripReservationViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UsR-6S-bEx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R34-uV-reZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topLogoImg" translatesAutoresizingMaskIntoConstraints="NO" id="GK6-yL-iG1">
+                                        <rect key="frame" x="157" y="0.0" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="UTe-C2-Mh8"/>
+                                            <constraint firstAttribute="height" constant="50" id="y7T-fo-yFV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GK6-yL-iG1" firstAttribute="centerY" secondItem="R34-uV-reZ" secondAttribute="centerY" id="65Q-5C-aaM"/>
+                                    <constraint firstAttribute="height" constant="50" id="ECu-3V-cgN"/>
+                                    <constraint firstItem="GK6-yL-iG1" firstAttribute="centerX" secondItem="R34-uV-reZ" secondAttribute="centerX" id="FpB-hD-jlw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amP-mP-JDn">
+                                <rect key="frame" x="0.0" y="94" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0yf-AK-ehR"/>
+                                </constraints>
+                                <state key="normal" title="호텔 예약하기" image="hotel_icon">
+                                    <color key="titleColor" red="0.050980392156862744" green="0.047058823529411764" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R34-uV-reZ" firstAttribute="leading" secondItem="7zK-qP-bNT" secondAttribute="leading" id="3Dg-Mi-fKg"/>
+                            <constraint firstItem="7zK-qP-bNT" firstAttribute="trailing" secondItem="amP-mP-JDn" secondAttribute="trailing" id="72Q-Ps-NgL"/>
+                            <constraint firstItem="amP-mP-JDn" firstAttribute="leading" secondItem="7zK-qP-bNT" secondAttribute="leading" id="9u8-og-7cb"/>
+                            <constraint firstItem="amP-mP-JDn" firstAttribute="top" secondItem="R34-uV-reZ" secondAttribute="bottom" id="SCm-DJ-aJz"/>
+                            <constraint firstItem="R34-uV-reZ" firstAttribute="top" secondItem="7zK-qP-bNT" secondAttribute="top" id="UOH-6d-TAY"/>
+                            <constraint firstItem="7zK-qP-bNT" firstAttribute="trailing" secondItem="R34-uV-reZ" secondAttribute="trailing" id="oPR-Cj-nUI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7zK-qP-bNT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="여행 예약" id="AdA-9G-JIO"/>
+                    <connections>
+                        <outlet property="topLogoView" destination="R34-uV-reZ" id="sHL-cm-4KN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3z-8e-Hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="-961"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Esp-SK-Xxt">
+            <objects>
+                <tabBarController id="lT2-uR-sJl" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="olA-On-DfM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9OD-QG-sqk" kind="relationship" relationship="viewControllers" id="jYd-uF-GHY"/>
+                        <segue destination="fCR-DH-Sdt" kind="relationship" relationship="viewControllers" id="JYa-ls-nQi"/>
+                        <segue destination="RVI-kj-69H" kind="relationship" relationship="viewControllers" id="DiK-1J-1YX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pf9-U6-gzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hotel_icon" width="25" height="25"/>
+        <image name="topLogoImg" width="640" height="188"/>
+    </resources>
+</document>
