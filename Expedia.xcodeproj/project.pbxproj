@@ -15,6 +15,7 @@
 		43546EA52251C08A005A0AB7 /* ExpediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EA42251C08A005A0AB7 /* ExpediaTests.swift */; };
 		43546EB02251C08A005A0AB7 /* ExpediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */; };
 		43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EBD22523605005A0AB7 /* BasicRequired.swift */; };
+		43546EC2225243E9005A0AB7 /* BeforeLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43546EC1225243E9005A0AB7 /* BeforeLoginView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpediaUITests.swift; sourceTree = "<group>"; };
 		43546EB12251C08A005A0AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43546EBD22523605005A0AB7 /* BasicRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequired.swift; sourceTree = "<group>"; };
+		43546EC1225243E9005A0AB7 /* BeforeLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeforeLoginView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,8 @@
 		43546E8E2251C087005A0AB7 /* Expedia */ = {
 			isa = PBXGroup;
 			children = (
+				43546EC022524392005A0AB7 /* TripReservartion */,
 				43546E8F2251C087005A0AB7 /* AppDelegate.swift */,
-				43546E912251C087005A0AB7 /* TripReservationViewController.swift */,
 				43546E932251C087005A0AB7 /* Main.storyboard */,
 				43546E962251C08A005A0AB7 /* Assets.xcassets */,
 				43546E982251C08A005A0AB7 /* LaunchScreen.storyboard */,
@@ -126,6 +128,15 @@
 				43546EB12251C08A005A0AB7 /* Info.plist */,
 			);
 			path = ExpediaUITests;
+			sourceTree = "<group>";
+		};
+		43546EC022524392005A0AB7 /* TripReservartion */ = {
+			isa = PBXGroup;
+			children = (
+				43546E912251C087005A0AB7 /* TripReservationViewController.swift */,
+				43546EC1225243E9005A0AB7 /* BeforeLoginView.xib */,
+			);
+			path = TripReservartion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				43546E9A2251C08A005A0AB7 /* LaunchScreen.storyboard in Resources */,
 				43546E972251C08A005A0AB7 /* Assets.xcassets in Resources */,
 				43546E952251C087005A0AB7 /* Main.storyboard in Resources */,
+				43546EC2225243E9005A0AB7 /* BeforeLoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
