@@ -1,0 +1,6 @@
+framework module Pods_Expedia {
+  umbrella header "Pods-Expedia-umbrella.h"
+
+  export *
+  module * { export * }
+}
