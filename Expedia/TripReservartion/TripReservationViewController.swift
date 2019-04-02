@@ -43,6 +43,8 @@ class TripReservationViewController: UIViewController {
         menuListTable.register(todayPriceNibName, forCellReuseIdentifier: "todayPriceTVC")
         let eightPriceNibName = UINib(nibName: "EightPriceHotelTableViewCell", bundle: nil)
         menuListTable.register(eightPriceNibName, forCellReuseIdentifier: "eightPriceTVC")
+        let daydayPriceNibName = UINib(nibName: "DayDayPriceTableViewCell", bundle: nil)
+        menuListTable.register(daydayPriceNibName, forCellReuseIdentifier: "daydayPriceTVC")
         
     }
 
@@ -50,7 +52,7 @@ class TripReservationViewController: UIViewController {
 }
 extension TripReservationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,10 +63,14 @@ extension TripReservationViewController: UITableViewDelegate, UITableViewDataSou
         } else if indexPath.row == 1 {
             guard let todayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "todayPriceTVC", for: indexPath) as? TodayPriceTableViewCell else { return UITableViewCell() }
             return todayPriceCell
-        } else {
+        } else if indexPath.row == 2 {
             guard let eightPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "eightPriceTVC", for: indexPath) as? EightPriceHotelTableViewCell else { return UITableViewCell() }
             eightPriceCell.updateUI()
             return eightPriceCell
+        } else {
+            guard let daydayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "daydayPriceTVC", for: indexPath) as? DayDayPriceTableViewCell else { return UITableViewCell() }
+            daydayPriceCell.updateUI()
+            return daydayPriceCell
         }
         return UITableViewCell()
     }
