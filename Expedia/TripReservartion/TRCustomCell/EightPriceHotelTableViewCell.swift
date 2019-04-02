@@ -12,6 +12,9 @@ class EightPriceHotelTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageButton: UIButton!
     
-    
+    func updateUI() {
+        imageButton.layer.cornerRadius = 10
+        imageButton.layer.masksToBounds = true
+    }
     
 }
