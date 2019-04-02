@@ -109,20 +109,30 @@
                                     <color key="titleColor" red="0.050980392156862744" green="0.047058823529411764" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-0O-whQ">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.93725490196078431" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <sections/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="R34-uV-reZ" firstAttribute="leading" secondItem="7zK-qP-bNT" secondAttribute="leading" id="3Dg-Mi-fKg"/>
                             <constraint firstItem="7zK-qP-bNT" firstAttribute="trailing" secondItem="amP-mP-JDn" secondAttribute="trailing" id="72Q-Ps-NgL"/>
                             <constraint firstItem="amP-mP-JDn" firstAttribute="leading" secondItem="7zK-qP-bNT" secondAttribute="leading" id="9u8-og-7cb"/>
+                            <constraint firstItem="7zK-qP-bNT" firstAttribute="bottom" secondItem="dC9-0O-whQ" secondAttribute="bottom" id="GLt-4F-r8T"/>
                             <constraint firstItem="amP-mP-JDn" firstAttribute="top" secondItem="R34-uV-reZ" secondAttribute="bottom" id="SCm-DJ-aJz"/>
                             <constraint firstItem="R34-uV-reZ" firstAttribute="top" secondItem="7zK-qP-bNT" secondAttribute="top" id="UOH-6d-TAY"/>
+                            <constraint firstItem="dC9-0O-whQ" firstAttribute="leading" secondItem="7zK-qP-bNT" secondAttribute="leading" id="o4N-i2-Hxn"/>
                             <constraint firstItem="7zK-qP-bNT" firstAttribute="trailing" secondItem="R34-uV-reZ" secondAttribute="trailing" id="oPR-Cj-nUI"/>
+                            <constraint firstItem="dC9-0O-whQ" firstAttribute="top" secondItem="amP-mP-JDn" secondAttribute="bottom" id="qsd-LJ-4Ju"/>
+                            <constraint firstItem="7zK-qP-bNT" firstAttribute="trailing" secondItem="dC9-0O-whQ" secondAttribute="trailing" id="sZY-5Q-MmN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7zK-qP-bNT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="여행 예약" id="AdA-9G-JIO"/>
                     <connections>
+                        <outlet property="menuListTable" destination="dC9-0O-whQ" id="BKy-Td-SxD"/>
                         <outlet property="reservateHotelButton" destination="amP-mP-JDn" id="Jlh-d0-jRj"/>
                         <outlet property="topLogoView" destination="R34-uV-reZ" id="sHL-cm-4KN"/>
                     </connections>
