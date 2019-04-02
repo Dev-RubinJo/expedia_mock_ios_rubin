@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="daydayPriceTVC" id="KGk-i7-Jjw" customClass="DayDayPriceTableViewCell" customModule="Expedia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlH-qN-CUq">
+                        <rect key="frame" x="10" y="10.5" width="300" height="230"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="230" id="T9w-hc-B8g"/>
+                        </constraints>
+                        <state key="normal" image="daydayPrice"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.94509803920000002" green="0.93725490199999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="HlH-qN-CUq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NMH-ur-OiA"/>
+                    <constraint firstAttribute="trailing" secondItem="HlH-qN-CUq" secondAttribute="trailing" constant="10" id="QKt-bR-XhC"/>
+                    <constraint firstItem="HlH-qN-CUq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XAq-1o-nRu"/>
+                    <constraint firstAttribute="bottom" secondItem="HlH-qN-CUq" secondAttribute="bottom" constant="10" id="hYb-s3-V2C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="daydayPriceButton" destination="HlH-qN-CUq" id="9aC-OT-07E"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="daydayPrice" width="322.66665649414062" height="215"/>
+    </resources>
+</document>
