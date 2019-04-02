@@ -20,27 +20,27 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" restorationIdentifier="beforeLoginTVC" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-tf-CkJ">
-                        <rect key="frame" x="15" y="15.5" width="290" height="130"/>
+                        <rect key="frame" x="10" y="15.5" width="300" height="130"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="member_reservation_icon" translatesAutoresizingMaskIntoConstraints="NO" id="r5Z-OB-GEH">
-                                <rect key="frame" x="130" y="10" width="30" height="30"/>
+                                <rect key="frame" x="135" y="10" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6iX-7C-Fc0"/>
                                     <constraint firstAttribute="width" constant="30" id="9pW-ek-9V3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjQ-cG-2Vo">
-                                <rect key="frame" x="0.0" y="100" width="290" height="30"/>
+                                <rect key="frame" x="0.0" y="100" width="300" height="30"/>
                                 <state key="normal" title="로그인 또는 회원가입"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익스피디아 회원으로 예약!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-eg-hsN">
-                                <rect key="frame" x="10" y="45" width="270" height="21"/>
+                                <rect key="frame" x="10" y="45" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.027781123295426369" green="0.1218145564198494" blue="0.47484278678894043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 바로 수천 개 엄선된 호텔을 추가 할인받으실 수 있어요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="173-lM-fcU">
-                                <rect key="frame" x="10" y="71" width="270" height="12"/>
+                                <rect key="frame" x="10" y="71" width="280" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,8 +64,8 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="dx1-tf-CkJ" secondAttribute="trailing" constant="15" id="KYW-I1-k11"/>
-                    <constraint firstItem="dx1-tf-CkJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="MZt-2U-296"/>
+                    <constraint firstAttribute="trailing" secondItem="dx1-tf-CkJ" secondAttribute="trailing" constant="10" id="KYW-I1-k11"/>
+                    <constraint firstItem="dx1-tf-CkJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MZt-2U-296"/>
                     <constraint firstItem="dx1-tf-CkJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="aR0-gm-MOQ"/>
                     <constraint firstAttribute="bottom" secondItem="dx1-tf-CkJ" secondAttribute="bottom" constant="15" id="x6n-wF-bDg"/>
                 </constraints>
