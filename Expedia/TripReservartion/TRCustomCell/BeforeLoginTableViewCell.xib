@@ -30,7 +30,11 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjQ-cG-2Vo">
-                                <rect key="frame" x="0.0" y="100" width="300" height="30"/>
+                                <rect key="frame" x="0.0" y="87" width="300" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Xu0-9t-3zU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="로그인 또는 회원가입"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익스피디아 회원으로 예약!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-eg-hsN">
@@ -46,7 +50,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94864410161972046" green="0.95965725183486938" blue="0.94193035364151001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HIc-eg-hsN" firstAttribute="leading" secondItem="dx1-tf-CkJ" secondAttribute="leading" constant="10" id="2nr-eJ-s7h"/>
                             <constraint firstItem="173-lM-fcU" firstAttribute="leading" secondItem="dx1-tf-CkJ" secondAttribute="leading" constant="10" id="6Z4-db-Ued"/>
