@@ -19,20 +19,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlH-qN-CUq">
-                        <rect key="frame" x="10" y="10.5" width="300" height="230"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlH-qN-CUq">
+                        <rect key="frame" x="10" y="10" width="300" height="230"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="230" id="T9w-hc-B8g"/>
                         </constraints>
                         <state key="normal" image="daydayPrice"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="일일 특가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkb-tr-DP2">
+                        <rect key="frame" x="15" y="184" width="295" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="매일 일부 호텔을 40% 이상 할인해 드려요. 매일 밤 자정 특가 상품이 업데이트 됩니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8t-A2-vO9">
+                        <rect key="frame" x="15" y="213" width="295" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" red="0.94509803920000002" green="0.93725490199999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="y8t-A2-vO9" secondAttribute="bottom" constant="15" id="HlK-iz-2Rw"/>
+                    <constraint firstAttribute="trailing" secondItem="y8t-A2-vO9" secondAttribute="trailing" constant="10" id="K86-SE-AcV"/>
                     <constraint firstItem="HlH-qN-CUq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NMH-ur-OiA"/>
                     <constraint firstAttribute="trailing" secondItem="HlH-qN-CUq" secondAttribute="trailing" constant="10" id="QKt-bR-XhC"/>
                     <constraint firstItem="HlH-qN-CUq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XAq-1o-nRu"/>
                     <constraint firstAttribute="bottom" secondItem="HlH-qN-CUq" secondAttribute="bottom" constant="10" id="hYb-s3-V2C"/>
+                    <constraint firstItem="rkb-tr-DP2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jfR-a5-2ZG"/>
+                    <constraint firstItem="y8t-A2-vO9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="quf-zG-b0D"/>
+                    <constraint firstAttribute="trailing" secondItem="rkb-tr-DP2" secondAttribute="trailing" constant="10" id="yOe-0M-Wlp"/>
+                    <constraint firstItem="y8t-A2-vO9" firstAttribute="top" secondItem="rkb-tr-DP2" secondAttribute="bottom" constant="8" id="zWR-sS-XxE"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -42,6 +60,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="daydayPrice" width="322.66665649414062" height="215"/>
+        <image name="daydayPrice" width="682.66668701171875" height="512"/>
     </resources>
 </document>
