@@ -30,9 +30,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjQ-cG-2Vo">
-                                <rect key="frame" x="0.0" y="87" width="300" height="43"/>
+                                <rect key="frame" x="0.0" y="90" width="300" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="Xu0-9t-3zU"/>
+                                    <constraint firstAttribute="height" constant="40" id="Xu0-9t-3zU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="로그인 또는 회원가입"/>
