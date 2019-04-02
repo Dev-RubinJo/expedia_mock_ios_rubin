@@ -16,6 +16,10 @@
 		43546EB02251C08A005A0AB7 /* ExpediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */; };
 		43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EBD22523605005A0AB7 /* BasicRequired.swift */; };
 		43546ECA225247B8005A0AB7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EC9225247B8005A0AB7 /* ScheduleViewController.swift */; };
+		43546ED022530262005A0AB7 /* BeforeLoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546ECE22530262005A0AB7 /* BeforeLoginTableViewCell.swift */; };
+		43546ED122530262005A0AB7 /* BeforeLoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43546ECF22530262005A0AB7 /* BeforeLoginTableViewCell.xib */; };
+		43546ED422533136005A0AB7 /* EightPriceHotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546ED222533136005A0AB7 /* EightPriceHotelTableViewCell.swift */; };
+		43546ED522533136005A0AB7 /* EightPriceHotelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43546ED322533136005A0AB7 /* EightPriceHotelTableViewCell.xib */; };
 		A2B34D64DC4FEC8DC0BBC5CB /* Pods_ExpediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C416573140C4A01AFC4D09E4 /* Pods_ExpediaUITests.framework */; };
 		ADF06054F8E02AC0CE41BA26 /* Pods_ExpediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CC6EDE197E229CE6727F77 /* Pods_ExpediaTests.framework */; };
 		BE9026435F7FF3F07733BA88 /* Pods_Expedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A19F3363A26ABBE0CFA47 /* Pods_Expedia.framework */; };
@@ -55,6 +59,10 @@
 		43546EB12251C08A005A0AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43546EBD22523605005A0AB7 /* BasicRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequired.swift; sourceTree = "<group>"; };
 		43546EC9225247B8005A0AB7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		43546ECE22530262005A0AB7 /* BeforeLoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeLoginTableViewCell.swift; sourceTree = "<group>"; };
+		43546ECF22530262005A0AB7 /* BeforeLoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeforeLoginTableViewCell.xib; sourceTree = "<group>"; };
+		43546ED222533136005A0AB7 /* EightPriceHotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightPriceHotelTableViewCell.swift; sourceTree = "<group>"; };
+		43546ED322533136005A0AB7 /* EightPriceHotelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EightPriceHotelTableViewCell.xib; sourceTree = "<group>"; };
 		5CA5734601FFAD9FE7212535 /* Pods-Expedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expedia.debug.xcconfig"; path = "Target Support Files/Pods-Expedia/Pods-Expedia.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA5024A2DBF299A76E4DE23 /* Pods-ExpediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaTests.release.xcconfig"; path = "Target Support Files/Pods-ExpediaTests/Pods-ExpediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		949CE30D6BDD36085C79E80B /* Pods-ExpediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaTests.debug.xcconfig"; path = "Target Support Files/Pods-ExpediaTests/Pods-ExpediaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				43546E912251C087005A0AB7 /* TripReservationViewController.swift */,
+				43546ECD225301EE005A0AB7 /* TRCustomCell */,
 			);
 			path = TripReservartion;
 			sourceTree = "<group>";
@@ -164,6 +173,17 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		43546ECD225301EE005A0AB7 /* TRCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				43546ECE22530262005A0AB7 /* BeforeLoginTableViewCell.swift */,
+				43546ECF22530262005A0AB7 /* BeforeLoginTableViewCell.xib */,
+				43546ED222533136005A0AB7 /* EightPriceHotelTableViewCell.swift */,
+				43546ED322533136005A0AB7 /* EightPriceHotelTableViewCell.xib */,
+			);
+			path = TRCustomCell;
+			sourceTree = "<group>";
+		};
 		475F70627A80C556024BE110 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +194,6 @@
 				F5BC6D27600D15E7EAF93817 /* Pods-ExpediaUITests.debug.xcconfig */,
 				CD7E3FBFD38A929E2E8E4E42 /* Pods-ExpediaUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -296,8 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43546ED122530262005A0AB7 /* BeforeLoginTableViewCell.xib in Resources */,
 				43546E9A2251C08A005A0AB7 /* LaunchScreen.storyboard in Resources */,
 				43546E972251C08A005A0AB7 /* Assets.xcassets in Resources */,
+				43546ED522533136005A0AB7 /* EightPriceHotelTableViewCell.xib in Resources */,
 				43546E952251C087005A0AB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +439,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43546ED422533136005A0AB7 /* EightPriceHotelTableViewCell.swift in Sources */,
 				43546E922251C087005A0AB7 /* TripReservationViewController.swift in Sources */,
+				43546ED022530262005A0AB7 /* BeforeLoginTableViewCell.swift in Sources */,
 				43546E902251C087005A0AB7 /* AppDelegate.swift in Sources */,
 				43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */,
 				43546ECA225247B8005A0AB7 /* ScheduleViewController.swift in Sources */,
