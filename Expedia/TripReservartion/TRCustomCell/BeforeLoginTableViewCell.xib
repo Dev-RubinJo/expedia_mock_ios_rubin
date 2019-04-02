@@ -15,12 +15,12 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BeforeLoginTableViewCell" customModule="Expedia" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" restorationIdentifier="beforeLoginTVC" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-tf-CkJ">
-                        <rect key="frame" x="15" y="15" width="290" height="129.5"/>
+                        <rect key="frame" x="15" y="15.5" width="290" height="130"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="member_reservation_icon" translatesAutoresizingMaskIntoConstraints="NO" id="r5Z-OB-GEH">
                                 <rect key="frame" x="130" y="10" width="30" height="30"/>
@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjQ-cG-2Vo">
-                                <rect key="frame" x="0.0" y="99.5" width="290" height="30"/>
+                                <rect key="frame" x="0.0" y="100" width="290" height="30"/>
                                 <state key="normal" title="로그인 또는 회원가입"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익스피디아 회원으로 예약!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-eg-hsN">
@@ -55,6 +55,7 @@
                             <constraint firstItem="r5Z-OB-GEH" firstAttribute="centerX" secondItem="dx1-tf-CkJ" secondAttribute="centerX" id="FJo-rI-zQa"/>
                             <constraint firstAttribute="trailing" secondItem="wjQ-cG-2Vo" secondAttribute="trailing" id="Hu4-bn-9hK"/>
                             <constraint firstItem="HIc-eg-hsN" firstAttribute="top" secondItem="r5Z-OB-GEH" secondAttribute="bottom" constant="5" id="Wdc-aK-NWf"/>
+                            <constraint firstAttribute="height" constant="130" id="Ws0-dv-yFg"/>
                             <constraint firstAttribute="trailing" secondItem="HIc-eg-hsN" secondAttribute="trailing" constant="10" id="Xyy-V7-NcR"/>
                             <constraint firstAttribute="bottom" secondItem="wjQ-cG-2Vo" secondAttribute="bottom" id="ceX-tm-TRe"/>
                             <constraint firstItem="wjQ-cG-2Vo" firstAttribute="leading" secondItem="dx1-tf-CkJ" secondAttribute="leading" id="not-Qp-34g"/>
