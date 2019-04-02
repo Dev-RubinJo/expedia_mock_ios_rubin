@@ -12,6 +12,7 @@ class TripReservationViewController: UIViewController {
 
     @IBOutlet weak var topLogoView: UIView!
     @IBOutlet weak var reservateHotelButton: UIButton!
+    @IBOutlet weak var menuListTable: UITableView!
     
     
     
@@ -30,9 +31,32 @@ class TripReservationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        menuListTable.delegate = self
+        menuListTable.dataSource = self
+        
         self.updateUI()
-        // Do any additional setup after loading the view.
+        
+        let beforeLoginNibName = UINib(nibName: "BeforeLoginTableViewCell", bundle: nil)
+        menuListTable.register(beforeLoginNibName, forCellReuseIdentifier: "beforeLoginTVC")
+        
+        
     }
 
 
+}
+extension TripReservationViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let beforeLoginCell = menuListTable.dequeueReusableCell(withIdentifier: "beforeLoginTVC", for: indexPath) as? BeforeLoginTableViewCell else { return UITableViewCell() }
+//        beforeLoginCell.updateUI()
+        return beforeLoginCell
+        
+    }
+    
+    
 }
