@@ -39,7 +39,10 @@ class TripReservationViewController: UIViewController {
         
         let beforeLoginNibName = UINib(nibName: "BeforeLoginTableViewCell", bundle: nil)
         menuListTable.register(beforeLoginNibName, forCellReuseIdentifier: "beforeLoginTVC")
-        
+        let todayPriceNibName = UINib(nibName: "TodayPriceTableViewCell", bundle: nil)
+        menuListTable.register(todayPriceNibName, forCellReuseIdentifier: "todayPriceTVC")
+        let eightPriceNibName = UINib(nibName: "EightPriceHotelTableViewCell", bundle: nil)
+        menuListTable.register(eightPriceNibName, forCellReuseIdentifier: "eightPriceTVC")
         
     }
 
@@ -47,15 +50,23 @@ class TripReservationViewController: UIViewController {
 }
 extension TripReservationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let beforeLoginCell = menuListTable.dequeueReusableCell(withIdentifier: "beforeLoginTVC", for: indexPath) as? BeforeLoginTableViewCell else { return UITableViewCell() }
-//        beforeLoginCell.updateUI()
-        return beforeLoginCell
-        
+        if indexPath.row == 0 {
+            guard let beforeLoginCell = menuListTable.dequeueReusableCell(withIdentifier: "beforeLoginTVC", for: indexPath) as? BeforeLoginTableViewCell else { return UITableViewCell() }
+            beforeLoginCell.updateUI()
+            return beforeLoginCell
+        } else if indexPath.row == 1 {
+            guard let todayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "todayPriceTVC", for: indexPath) as? TodayPriceTableViewCell else { return UITableViewCell() }
+            return todayPriceCell
+        } else {
+            guard let eightPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "eightPriceTVC", for: indexPath) as? EightPriceHotelTableViewCell else { return UITableViewCell() }
+            eightPriceCell.updateUI()
+            return eightPriceCell
+        }
+        return UITableViewCell()
     }
     
     
