@@ -40,18 +40,90 @@
                                     <constraint firstItem="Jdc-nO-Pfb" firstAttribute="centerY" secondItem="bay-DU-PWX" secondAttribute="centerY" id="l31-9u-xci"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxC-Vn-j6F">
+                                <rect key="frame" x="0.0" y="94" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expedia.co.kr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ay-Ts-hKv">
+                                        <rect key="frame" x="10" y="5" width="200" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="BH7-sy-RwQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="YPw-4h-bUz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.047058823530000002" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AC-tZ-7Dp">
+                                        <rect key="frame" x="358" y="5" width="46" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3xG-xe-k5r"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1AC-tZ-7Dp" secondAttribute="trailing" constant="10" id="MXE-t5-FPB"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ay-Ts-hKv" secondAttribute="bottom" constant="5" id="U79-xw-cWJ"/>
+                                    <constraint firstItem="1AC-tZ-7Dp" firstAttribute="top" secondItem="cxC-Vn-j6F" secondAttribute="top" constant="5" id="Zqd-ZY-R4c"/>
+                                    <constraint firstItem="3ay-Ts-hKv" firstAttribute="top" secondItem="cxC-Vn-j6F" secondAttribute="top" constant="5" id="dvu-Bo-b3Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="1AC-tZ-7Dp" secondAttribute="bottom" constant="5" id="g3f-aQ-TrG"/>
+                                    <constraint firstItem="3ay-Ts-hKv" firstAttribute="leading" secondItem="cxC-Vn-j6F" secondAttribute="leading" constant="10" id="h3H-mM-S0J"/>
+                                    <constraint firstAttribute="height" constant="50" id="qbJ-TR-abK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVi-if-Zya">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인하여 예정된 여행을 확인하세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owq-cJ-jiV">
+                                        <rect key="frame" x="10" y="50" width="394" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="XMX-1z-dXL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.027450980390000001" green="0.1215686275" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tV3-q5-pmC">
+                                        <rect key="frame" x="5" y="130" width="404" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ABx-Mc-0GU"/>
+                                        </constraints>
+                                        <state key="normal" image="LoginToExpedia"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.93725490199999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tV3-q5-pmC" firstAttribute="top" secondItem="Owq-cJ-jiV" secondAttribute="bottom" constant="50" id="3RC-TS-wvS"/>
+                                    <constraint firstItem="tV3-q5-pmC" firstAttribute="leading" secondItem="tVi-if-Zya" secondAttribute="leading" constant="5" id="5HA-fW-XvH"/>
+                                    <constraint firstItem="Owq-cJ-jiV" firstAttribute="leading" secondItem="tVi-if-Zya" secondAttribute="leading" constant="10" id="9bE-K5-UHx"/>
+                                    <constraint firstAttribute="trailing" secondItem="tV3-q5-pmC" secondAttribute="trailing" constant="5" id="K7f-cX-FZh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Owq-cJ-jiV" secondAttribute="trailing" constant="10" id="cEE-2T-16P"/>
+                                    <constraint firstItem="Owq-cJ-jiV" firstAttribute="top" secondItem="tVi-if-Zya" secondAttribute="top" constant="50" id="vwy-sQ-hbm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tVi-if-Zya" firstAttribute="top" secondItem="cxC-Vn-j6F" secondAttribute="bottom" id="FWh-Nz-FbG"/>
                             <constraint firstItem="a6j-1h-eR0" firstAttribute="trailing" secondItem="bay-DU-PWX" secondAttribute="trailing" id="Fej-Pf-SSB"/>
+                            <constraint firstItem="cxC-Vn-j6F" firstAttribute="leading" secondItem="a6j-1h-eR0" secondAttribute="leading" id="J1i-YU-zvr"/>
+                            <constraint firstItem="cxC-Vn-j6F" firstAttribute="top" secondItem="bay-DU-PWX" secondAttribute="bottom" id="JC9-ql-kHg"/>
+                            <constraint firstItem="a6j-1h-eR0" firstAttribute="trailing" secondItem="tVi-if-Zya" secondAttribute="trailing" id="beV-3c-VaV"/>
                             <constraint firstItem="bay-DU-PWX" firstAttribute="top" secondItem="a6j-1h-eR0" secondAttribute="top" id="fUh-a8-GWT"/>
+                            <constraint firstItem="tVi-if-Zya" firstAttribute="leading" secondItem="a6j-1h-eR0" secondAttribute="leading" id="hfu-8T-C1C"/>
+                            <constraint firstItem="a6j-1h-eR0" firstAttribute="trailing" secondItem="cxC-Vn-j6F" secondAttribute="trailing" id="hpq-Q7-6lb"/>
+                            <constraint firstItem="a6j-1h-eR0" firstAttribute="bottom" secondItem="tVi-if-Zya" secondAttribute="bottom" id="mx1-Sy-Uw2"/>
                             <constraint firstItem="bay-DU-PWX" firstAttribute="leading" secondItem="a6j-1h-eR0" secondAttribute="leading" id="rQT-4u-hEW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a6j-1h-eR0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="일정" id="uMI-HQ-XDc"/>
+                    <tabBarItem key="tabBarItem" title="일정" image="bagL" landscapeImage="bagC" id="uMI-HQ-XDc"/>
                     <connections>
+                        <outlet property="URLAndCountryView" destination="cxC-Vn-j6F" id="2VB-a0-Zqd"/>
+                        <outlet property="countryButton" destination="1AC-tZ-7Dp" id="KQe-Tz-hEw"/>
                         <outlet property="topLabelView" destination="bay-DU-PWX" id="G6R-N2-BND"/>
+                        <outlet property="urlLabel" destination="3ay-Ts-hKv" id="fHk-15-wnL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OQ-K2-AbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,7 +140,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rIf-CI-ylv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="계정" id="k6K-Ro-AbI"/>
+                    <tabBarItem key="tabBarItem" title="계정" image="profile_icL" landscapeImage="profile_icC" id="k6K-Ro-AbI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OW1-Ey-DrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,7 +202,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7zK-qP-bNT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="여행 예약" id="AdA-9G-JIO"/>
+                    <tabBarItem key="tabBarItem" title="여행 예약" image="searchL" landscapeImage="searchC" id="AdA-9G-JIO"/>
                     <connections>
                         <outlet property="menuListTable" destination="dC9-0O-whQ" id="BKy-Td-SxD"/>
                         <outlet property="reservateHotelButton" destination="amP-mP-JDn" id="Jlh-d0-jRj"/>
@@ -140,6 +212,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3z-8e-Hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="381" y="-961"/>
+        </scene>
+        <!--Login Or Register View Controller-->
+        <scene sceneID="nlz-DN-o81">
+            <objects>
+                <viewController storyboardIdentifier="loginOrRegister" id="jBO-Z3-RhG" customClass="LoginOrRegisterViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vi9-zE-aYw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6W3-Vg-8Ex">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-Qx-sLP">
+                                        <rect key="frame" x="10" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="kAC-fT-ajm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CQC-Qa-19r"/>
+                                    <constraint firstAttribute="bottom" secondItem="gkl-Qx-sLP" secondAttribute="bottom" id="jum-Bc-g87"/>
+                                    <constraint firstItem="gkl-Qx-sLP" firstAttribute="leading" secondItem="6W3-Vg-8Ex" secondAttribute="leading" constant="10" id="snn-fr-JoP"/>
+                                    <constraint firstItem="gkl-Qx-sLP" firstAttribute="top" secondItem="6W3-Vg-8Ex" secondAttribute="top" id="y4V-F6-Mqf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6W3-Vg-8Ex" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="MRF-Tn-6kq"/>
+                            <constraint firstItem="6W3-Vg-8Ex" firstAttribute="top" secondItem="XQU-N6-PGb" secondAttribute="top" id="gun-MO-49I"/>
+                            <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="6W3-Vg-8Ex" secondAttribute="trailing" id="nKP-NH-46d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XQU-N6-PGb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BR4-lf-Mn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="-460"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Esp-SK-Xxt">
@@ -162,7 +278,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LoginToExpedia" width="584.5" height="79.5"/>
+        <image name="bagC" width="18" height="15"/>
+        <image name="bagL" width="25" height="20.5"/>
         <image name="hotel_icon" width="25" height="25"/>
+        <image name="profile_icC" width="18" height="18"/>
+        <image name="profile_icL" width="25" height="25"/>
+        <image name="searchC" width="18" height="16.5"/>
+        <image name="searchL" width="25" height="23"/>
         <image name="topLogoImg" width="640" height="188"/>
     </resources>
 </document>
