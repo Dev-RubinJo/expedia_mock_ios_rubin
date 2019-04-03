@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class LoginOrRegisterViewController: UIViewController {
+class LoginOrRegisterViewController: ButtonBarPagerTabStripViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+    }
+    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        <#code#>
     }
     
     
+
 }

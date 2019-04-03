@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="381" y="-961"/>
         </scene>
-        <!--Login Or Register View Controller-->
+        <!--View Controller-->
         <scene sceneID="nlz-DN-o81">
             <objects>
-                <viewController storyboardIdentifier="loginOrRegister" id="jBO-Z3-RhG" customClass="LoginOrRegisterViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginOrRegister" id="jBO-Z3-RhG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vi9-zE-aYw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BR4-lf-Mn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="-460"/>
+            <point key="canvasLocation" x="2554" y="-429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Esp-SK-Xxt">
