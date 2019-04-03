@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4F19250F7C2AFDCC2D287F56CCB2136D"
-               BuildableName = "Pods_Expedia.framework"
-               BlueprintName = "Pods-Expedia"
+               BlueprintIdentifier = "6E63A85DDD4D1609B2ED57ACA7E5CE75"
+               BuildableName = "XLPagerTabStrip.bundle"
+               BlueprintName = "XLPagerTabStrip-XLPagerTabStrip"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4F19250F7C2AFDCC2D287F56CCB2136D"
-            BuildableName = "Pods_Expedia.framework"
-            BlueprintName = "Pods-Expedia"
+            BlueprintIdentifier = "6E63A85DDD4D1609B2ED57ACA7E5CE75"
+            BuildableName = "XLPagerTabStrip.bundle"
+            BlueprintName = "XLPagerTabStrip-XLPagerTabStrip"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

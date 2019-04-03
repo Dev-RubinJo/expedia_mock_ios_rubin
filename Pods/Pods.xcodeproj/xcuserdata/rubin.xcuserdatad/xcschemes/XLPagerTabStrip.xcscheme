@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F0211BA46B19006579B5645344E74997"
-               BuildableName = "ScrollingFollowView.framework"
-               BlueprintName = "ScrollingFollowView"
+               BlueprintIdentifier = "BC9C0D1D60E488ED9E64A457A0876ED0"
+               BuildableName = "XLPagerTabStrip.framework"
+               BlueprintName = "XLPagerTabStrip"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
