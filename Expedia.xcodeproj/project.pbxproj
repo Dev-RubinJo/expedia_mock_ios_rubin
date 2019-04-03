@@ -27,6 +27,8 @@
 		43546EE42253A74D005A0AB7 /* LimitedDatePriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EE22253A74D005A0AB7 /* LimitedDatePriceTableViewCell.swift */; };
 		43546EE52253A74D005A0AB7 /* LimitedDatePriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43546EE32253A74D005A0AB7 /* LimitedDatePriceTableViewCell.xib */; };
 		43546EEB2254E2DF005A0AB7 /* LoginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EEA2254E2DF005A0AB7 /* LoginOrRegisterViewController.swift */; };
+		43546EEE2254E77D005A0AB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EED2254E77D005A0AB7 /* LoginViewController.swift */; };
+		43546EF02254E796005A0AB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EEF2254E796005A0AB7 /* RegisterViewController.swift */; };
 		A2B34D64DC4FEC8DC0BBC5CB /* Pods_ExpediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C416573140C4A01AFC4D09E4 /* Pods_ExpediaUITests.framework */; };
 		ADF06054F8E02AC0CE41BA26 /* Pods_ExpediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CC6EDE197E229CE6727F77 /* Pods_ExpediaTests.framework */; };
 		BE9026435F7FF3F07733BA88 /* Pods_Expedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A19F3363A26ABBE0CFA47 /* Pods_Expedia.framework */; };
@@ -77,6 +79,8 @@
 		43546EE22253A74D005A0AB7 /* LimitedDatePriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedDatePriceTableViewCell.swift; sourceTree = "<group>"; };
 		43546EE32253A74D005A0AB7 /* LimitedDatePriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LimitedDatePriceTableViewCell.xib; sourceTree = "<group>"; };
 		43546EEA2254E2DF005A0AB7 /* LoginOrRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrRegisterViewController.swift; sourceTree = "<group>"; };
+		43546EED2254E77D005A0AB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		43546EEF2254E796005A0AB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5CA5734601FFAD9FE7212535 /* Pods-Expedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expedia.debug.xcconfig"; path = "Target Support Files/Pods-Expedia/Pods-Expedia.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA5024A2DBF299A76E4DE23 /* Pods-ExpediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaTests.release.xcconfig"; path = "Target Support Files/Pods-ExpediaTests/Pods-ExpediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		949CE30D6BDD36085C79E80B /* Pods-ExpediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpediaTests.debug.xcconfig"; path = "Target Support Files/Pods-ExpediaTests/Pods-ExpediaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,8 +146,8 @@
 			children = (
 				43546EC022524392005A0AB7 /* TripReservartion */,
 				43546EC82252473F005A0AB7 /* Schedule */,
+				43546EEC2254E6E9005A0AB7 /* LoginOrRegister */,
 				43546E8F2251C087005A0AB7 /* AppDelegate.swift */,
-				43546EEA2254E2DF005A0AB7 /* LoginOrRegisterViewController.swift */,
 				43546E932251C087005A0AB7 /* Main.storyboard */,
 				43546E962251C08A005A0AB7 /* Assets.xcassets */,
 				43546E982251C08A005A0AB7 /* LaunchScreen.storyboard */,
@@ -203,6 +207,16 @@
 				43546EE32253A74D005A0AB7 /* LimitedDatePriceTableViewCell.xib */,
 			);
 			path = TRCustomCell;
+			sourceTree = "<group>";
+		};
+		43546EEC2254E6E9005A0AB7 /* LoginOrRegister */ = {
+			isa = PBXGroup;
+			children = (
+				43546EEA2254E2DF005A0AB7 /* LoginOrRegisterViewController.swift */,
+				43546EED2254E77D005A0AB7 /* LoginViewController.swift */,
+				43546EEF2254E796005A0AB7 /* RegisterViewController.swift */,
+			);
+			path = LoginOrRegister;
 			sourceTree = "<group>";
 		};
 		475F70627A80C556024BE110 /* Pods */ = {
@@ -468,6 +482,7 @@
 				43546ED422533136005A0AB7 /* EightPriceHotelTableViewCell.swift in Sources */,
 				43546EDC22537D3D005A0AB7 /* TodayPriceTableViewCell.swift in Sources */,
 				43546E922251C087005A0AB7 /* TripReservationViewController.swift in Sources */,
+				43546EF02254E796005A0AB7 /* RegisterViewController.swift in Sources */,
 				43546EE022538670005A0AB7 /* DayDayPriceTableViewCell.swift in Sources */,
 				43546EE42253A74D005A0AB7 /* LimitedDatePriceTableViewCell.swift in Sources */,
 				43546ED022530262005A0AB7 /* BeforeLoginTableViewCell.swift in Sources */,
@@ -475,6 +490,7 @@
 				43546E902251C087005A0AB7 /* AppDelegate.swift in Sources */,
 				43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */,
 				43546ECA225247B8005A0AB7 /* ScheduleViewController.swift in Sources */,
+				43546EEE2254E77D005A0AB7 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
