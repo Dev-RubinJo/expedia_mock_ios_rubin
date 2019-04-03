@@ -7,7 +7,7 @@ target 'Expedia' do
   pod 'Alamofire', '~>4.7'
   pod 'ObjectMapper', '~>3.4'
   pod 'SwiftyJSON'
-  pod 'XLPagerTabStrip', '~>9.0'
+  pod 'XLPagerTabStrip'
   # Pods for Expedia
 
   target 'ExpediaTests' do
