@@ -90,6 +90,9 @@
                                             <constraint firstAttribute="height" constant="60" id="ABx-Mc-0GU"/>
                                         </constraints>
                                         <state key="normal" image="LoginToExpedia"/>
+                                        <connections>
+                                            <segue destination="jBO-Z3-RhG" kind="presentation" identifier="showLoginOrRegisterVC2" id="azb-rC-bLP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.93725490199999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -207,16 +210,17 @@
                         <outlet property="menuListTable" destination="dC9-0O-whQ" id="BKy-Td-SxD"/>
                         <outlet property="reservateHotelButton" destination="amP-mP-JDn" id="Jlh-d0-jRj"/>
                         <outlet property="topLogoView" destination="R34-uV-reZ" id="sHL-cm-4KN"/>
+                        <segue destination="jBO-Z3-RhG" kind="presentation" identifier="showLoginOrRegisterVC1" id="cpT-KW-4ae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3z-8e-Hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="381" y="-961"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Or Register View Controller-->
         <scene sceneID="nlz-DN-o81">
             <objects>
-                <viewController storyboardIdentifier="loginOrRegister" id="jBO-Z3-RhG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginOrRegister" id="jBO-Z3-RhG" customClass="LoginOrRegisterViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vi9-zE-aYw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +228,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6W3-Vg-8Ex">
                                 <rect key="frame" x="0.0" y="44" width="414" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-Qx-sLP">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="loginOrRegisterVC" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-Qx-sLP">
                                         <rect key="frame" x="10" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="kAC-fT-ajm"/>
@@ -233,6 +237,9 @@
                                         <state key="normal" title="X">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="closeButton:" destination="jBO-Z3-RhG" eventType="touchUpInside" id="fvt-F4-ngN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,12 +250,45 @@
                                     <constraint firstItem="gkl-Qx-sLP" firstAttribute="top" secondItem="6W3-Vg-8Ex" secondAttribute="top" id="y4V-F6-Mqf"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cw8-CE-L2L" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="74" width="414" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="77L-Ay-pAa"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Ye-g9-1Mu">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lih-Dm-rwC">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-TV-POa">
+                                <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="XQU-N6-PGb" firstAttribute="bottom" secondItem="jOE-TV-POa" secondAttribute="bottom" id="JYx-Ex-fUc"/>
+                            <constraint firstItem="jOE-TV-POa" firstAttribute="top" secondItem="Cw8-CE-L2L" secondAttribute="bottom" id="Jyx-K0-d8q"/>
                             <constraint firstItem="6W3-Vg-8Ex" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="MRF-Tn-6kq"/>
+                            <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="Cw8-CE-L2L" secondAttribute="trailing" id="Vmf-rG-gMo"/>
+                            <constraint firstItem="jOE-TV-POa" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="ca7-Pr-LlN"/>
+                            <constraint firstItem="Cw8-CE-L2L" firstAttribute="top" secondItem="6W3-Vg-8Ex" secondAttribute="bottom" id="dmz-hJ-ZNJ"/>
                             <constraint firstItem="6W3-Vg-8Ex" firstAttribute="top" secondItem="XQU-N6-PGb" secondAttribute="top" id="gun-MO-49I"/>
+                            <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="jOE-TV-POa" secondAttribute="trailing" id="iyo-iS-Ox3"/>
                             <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="6W3-Vg-8Ex" secondAttribute="trailing" id="nKP-NH-46d"/>
+                            <constraint firstItem="Cw8-CE-L2L" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="tXA-7c-CzM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XQU-N6-PGb"/>
                     </view>
@@ -256,6 +296,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BR4-lf-Mn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2554" y="-429"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="eia-VP-dq6">
+            <objects>
+                <viewController id="wLW-0x-N9t" customClass="LoginViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0yI-ui-OWT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcL-Yi-GQo">
+                                <rect key="frame" x="186" y="438" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="as4-ON-bC1"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="lcL-Yi-GQo" id="9ui-eJ-8qz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqx-Op-YGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3876" y="-832"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="Vx8-Bx-uG5">
+            <objects>
+                <viewController id="Uf7-Sb-vpT" customClass="RegisterViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wf7-GR-PJv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1Mm-H0-F3n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oc-u2-z3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3875" y="-167"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Esp-SK-Xxt">
@@ -288,4 +370,7 @@
         <image name="searchL" width="25" height="23"/>
         <image name="topLogoImg" width="640" height="188"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cpT-KW-4ae"/>
+    </inferredMetricsTieBreakers>
 </document>
