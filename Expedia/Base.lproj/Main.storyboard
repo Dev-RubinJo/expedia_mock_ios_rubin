@@ -262,20 +262,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cw8-CE-L2L" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-TV-POa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NJ8-49-pX5" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="88" width="414" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="77L-Ay-pAa"/>
+                                    <constraint firstAttribute="height" constant="64" id="c8b-69-Flf"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Ye-g9-1Mu">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ejc-iR-Bf5">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lih-Dm-rwC">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="T1s-g3-ebH">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -285,25 +288,30 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-TV-POa">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Cw8-CE-L2L" firstAttribute="top" secondItem="XQU-N6-PGb" secondAttribute="top" id="ESq-Ng-K1v"/>
+                            <constraint firstItem="jOE-TV-POa" firstAttribute="top" secondItem="XQU-N6-PGb" secondAttribute="top" id="FTl-Kk-eNl"/>
                             <constraint firstItem="XQU-N6-PGb" firstAttribute="bottom" secondItem="jOE-TV-POa" secondAttribute="bottom" id="JYx-Ex-fUc"/>
-                            <constraint firstItem="jOE-TV-POa" firstAttribute="top" secondItem="Cw8-CE-L2L" secondAttribute="bottom" id="Jyx-K0-d8q"/>
-                            <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="Cw8-CE-L2L" secondAttribute="trailing" id="Vmf-rG-gMo"/>
                             <constraint firstItem="jOE-TV-POa" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="ca7-Pr-LlN"/>
+                            <constraint firstItem="NJ8-49-pX5" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="gZy-Ug-Yhe"/>
                             <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="jOE-TV-POa" secondAttribute="trailing" id="iyo-iS-Ox3"/>
-                            <constraint firstItem="Cw8-CE-L2L" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="tXA-7c-CzM"/>
+                            <constraint firstItem="NJ8-49-pX5" firstAttribute="trailing" secondItem="XQU-N6-PGb" secondAttribute="trailing" id="ny8-sB-Kl9"/>
+                            <constraint firstItem="NJ8-49-pX5" firstAttribute="top" secondItem="XQU-N6-PGb" secondAttribute="top" id="xwx-kD-Sr2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XQU-N6-PGb"/>
                     </view>
                     <navigationItem key="navigationItem" id="N84-fC-ZXP">
-                        <barButtonItem key="leftBarButtonItem" title="X" id="T8f-L5-A10"/>
+                        <barButtonItem key="leftBarButtonItem" title="X" id="T8f-L5-A10">
+                            <connections>
+                                <action selector="closeButton:" destination="jBO-Z3-RhG" id="8Oh-bA-cw9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="buttonBarView" destination="NJ8-49-pX5" id="WYQ-y4-2wy"/>
+                        <outlet property="containerView" destination="jOE-TV-POa" id="GFR-ca-shT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BR4-lf-Mn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,21 +324,9 @@
                     <view key="view" contentMode="scaleToFill" id="0yI-ui-OWT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcL-Yi-GQo">
-                                <rect key="frame" x="186" y="438" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="as4-ON-bC1"/>
                     </view>
-                    <connections>
-                        <outlet property="numberLabel" destination="lcL-Yi-GQo" id="9ui-eJ-8qz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqx-Op-YGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -343,9 +339,21 @@
                     <view key="view" contentMode="scaleToFill" id="Wf7-GR-PJv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHj-gY-t9r">
+                                <rect key="frame" x="186" y="438" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Mm-H0-F3n"/>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="AHj-gY-t9r" id="haV-qK-Ese"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oc-u2-z3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,7 +13,6 @@ class TripReservationViewController: UIViewController {
     @IBOutlet weak var topLogoView: UIView!
     @IBOutlet weak var reservateHotelButton: UIButton!
     @IBOutlet weak var menuListTable: UITableView!
-    //수정
     
     
     func updateUI() {
