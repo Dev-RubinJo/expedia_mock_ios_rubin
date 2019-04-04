@@ -26,9 +26,9 @@ class ScheduleViewController: UIViewController {
         self.updateUI()
         // Do any additional setup after loading the view.
     }
-    override func viewDidAppear(_ animated: Bool) {
-//        <#code#>
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+////        <#code#>
+//    }
     
 
 }
