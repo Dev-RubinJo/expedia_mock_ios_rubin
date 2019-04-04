@@ -33,17 +33,21 @@ class LoginOrRegisterViewController: ButtonBarPagerTabStripViewController {
         
         // Sets the height and colour of the slider bar of the selected pager tab
         settings.style.selectedBarHeight = 3.0
-        settings.style.selectedBarBackgroundColor = .orange
+        settings.style.selectedBarBackgroundColor = .blue
         
         // Changing item text color on swipe
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
             oldCell?.label.textColor = .gray
-            newCell?.label.textColor = .orange
+            newCell?.label.textColor = .blue
         }
     }
     
     override func viewDidLoad() {
+        // 네비게이션 바 하단 경계선 지우기
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
         configureButtonBar()
         super.viewDidLoad()
 
