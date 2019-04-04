@@ -9,6 +9,7 @@ target 'Expedia' do
   pod 'SwiftyJSON'
   pod 'XLPagerTabStrip'
   pod 'SegementSlide'
+  pod 'TextFieldEffects'
   # Pods for Expedia
 
   target 'ExpediaTests' do
