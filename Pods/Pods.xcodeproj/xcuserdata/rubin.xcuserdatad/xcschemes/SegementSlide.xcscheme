@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D12B670E8A59AF6FB25ABAB0557FA98"
-               BuildableName = "XLPagerTabStrip-XLPagerTabStrip.bundle"
-               BlueprintName = "XLPagerTabStrip-XLPagerTabStrip"
+               BlueprintIdentifier = "B6ADAAE3B5A199F17CFE165C78C704C3"
+               BuildableName = "SegementSlide.framework"
+               BlueprintName = "SegementSlide"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

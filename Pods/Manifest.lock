@@ -1,12 +1,14 @@
 PODS:
   - Alamofire (4.8.1)
   - ObjectMapper (3.4.2)
+  - SegementSlide (2.0)
   - SwiftyJSON (4.2.0)
   - XLPagerTabStrip (8.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - ObjectMapper (~> 3.4)
+  - SegementSlide
   - SwiftyJSON
   - XLPagerTabStrip
 
@@ -14,15 +16,17 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - ObjectMapper
+    - SegementSlide
     - SwiftyJSON
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SegementSlide: aa376424a196e11846cb2f58428e10648849d1ac
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: a1ee55d6583094162764c4c46d64d50f21bff56d
+PODFILE CHECKSUM: 997440d63418ee4f6c382e56ca0e4336ee0ce1f8
 
 COCOAPODS: 1.6.1
