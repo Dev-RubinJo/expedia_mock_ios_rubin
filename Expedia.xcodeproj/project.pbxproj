@@ -147,6 +147,7 @@
 				43546EC022524392005A0AB7 /* TripReservartion */,
 				43546EC82252473F005A0AB7 /* Schedule */,
 				43546EEC2254E6E9005A0AB7 /* LoginOrRegister */,
+				43546EF12255A6B9005A0AB7 /* New Group1 */,
 				43546E8F2251C087005A0AB7 /* AppDelegate.swift */,
 				43546E932251C087005A0AB7 /* Main.storyboard */,
 				43546E962251C08A005A0AB7 /* Assets.xcassets */,
@@ -217,6 +218,13 @@
 				43546EEF2254E796005A0AB7 /* RegisterViewController.swift */,
 			);
 			path = LoginOrRegister;
+			sourceTree = "<group>";
+		};
+		43546EF12255A6B9005A0AB7 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		475F70627A80C556024BE110 /* Pods */ = {
