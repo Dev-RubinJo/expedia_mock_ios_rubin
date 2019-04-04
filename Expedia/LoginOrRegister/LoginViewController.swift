@@ -10,19 +10,15 @@ import UIKit
 import XLPagerTabStrip
 
 class LoginViewController: UIViewController, IndicatorInfoProvider {
-    
-    
-    @IBOutlet weak var numberLabel: UILabel!
-    var childNumber: String = ""
-    
+
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "\(childNumber)")
+        return IndicatorInfo(title: "로그인")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.numberLabel.text = childNumber
+
         // Do any additional setup after loading the view.
     }
     

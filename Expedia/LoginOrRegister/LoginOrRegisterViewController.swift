@@ -15,6 +15,7 @@ class LoginOrRegisterViewController: ButtonBarPagerTabStripViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    
     func configureButtonBar() {
         // Sets the background colour of the pager strip and the pager strip item
         settings.style.buttonBarBackgroundColor = .white
@@ -43,15 +44,14 @@ class LoginOrRegisterViewController: ButtonBarPagerTabStripViewController {
     }
     
     override func viewDidLoad() {
+        configureButtonBar()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let child1 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
-        child1.childNumber = "One"
-        let child2 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
-        child2.childNumber = "Two"
+        let child2 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "registerVC") as! RegisterViewController
         return [child1, child2]
     }
 
