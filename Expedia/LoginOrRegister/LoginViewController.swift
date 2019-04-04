@@ -13,28 +13,33 @@ import TextFieldEffects
 class LoginViewController: UIViewController, IndicatorInfoProvider {
     
     let emailTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 145.0, width: UIScreen.main.bounds.width - 20, height: 45.0))
-    let passwardTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 210.0, width: UIScreen.main.bounds.width - 20, height: 45))
+    let passwordTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 210.0, width: UIScreen.main.bounds.width - 20, height: 45))
     
-    let forgetPassward = UIButton(frame: CGRect(x: 90.0, y: 285.0, width: 180, height: 30))
+    let forgetPassword = UIButton(frame: CGRect(x: 90.0, y: 285.0, width: 180, height: 30))
+    let loginButton = UIButton(frame: CGRect(x: 10.0, y: 305, width: UIScreen.main.bounds.width - 20, height: 45))
     
     
     func updateUI() {
         self.view.addSubview(emailTextField)
-        self.view.addSubview(passwardTextField)
-        self.view.addSubview(forgetPassward)
+        self.view.addSubview(passwordTextField)
+        self.view.addSubview(forgetPassword)
+        self.view.addSubview(loginButton)
         
         emailTextField.placeholder = " 이메일 주소"
         emailTextField.placeholderFontScale = 0.77
         emailTextField.borderStyle = .roundedRect
         emailTextField.placeholderColor = .darkGray
         
-        passwardTextField.placeholder = " 비밀번호"
-        passwardTextField.placeholderFontScale = 0.77
-        passwardTextField.borderStyle = .roundedRect
-        passwardTextField.placeholderColor = .darkGray
+        passwordTextField.placeholder = " 비밀번호"
+        passwordTextField.placeholderFontScale = 0.77
+        passwordTextField.borderStyle = .roundedRect
+        passwordTextField.placeholderColor = .darkGray
         
-        forgetPassward.setTitle("비밀번호를 잊으셨나요?", for: UIControl.State.normal)
-        forgetPassward.setTitleColor(.blue, for: UIControl.State.normal)
+        let passwordTitle: UIFont! = UIFont(name: "비밀번호를 잊으셨나요?", size: 15)
+        
+        forgetPassword.titleLabel?.font = passwordTitle
+        
+        forgetPassword.setTitleColor(.blue, for: UIControl.State.normal)
         
     }
     
