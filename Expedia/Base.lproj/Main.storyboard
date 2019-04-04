@@ -337,7 +337,7 @@
         <!--Login View Controller-->
         <scene sceneID="eia-VP-dq6">
             <objects>
-                <viewController id="wLW-0x-N9t" customClass="LoginViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="wLW-0x-N9t" customClass="LoginViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0yI-ui-OWT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -364,7 +364,7 @@
         <!--Register View Controller-->
         <scene sceneID="Vx8-Bx-uG5">
             <objects>
-                <viewController id="Uf7-Sb-vpT" customClass="RegisterViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registerVC" id="Uf7-Sb-vpT" customClass="RegisterViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wf7-GR-PJv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -408,6 +408,6 @@
         <image name="topLogoImg" width="640" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cpT-KW-4ae"/>
+        <segue reference="azb-rC-bLP"/>
     </inferredMetricsTieBreakers>
 </document>

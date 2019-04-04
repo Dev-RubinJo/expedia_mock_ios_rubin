@@ -8,6 +8,7 @@ target 'Expedia' do
   pod 'ObjectMapper', '~>3.4'
   pod 'SwiftyJSON'
   pod 'XLPagerTabStrip'
+  pod 'SegementSlide'
   # Pods for Expedia
 
   target 'ExpediaTests' do
