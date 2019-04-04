@@ -91,7 +91,7 @@
                                         </constraints>
                                         <state key="normal" image="LoginToExpedia"/>
                                         <connections>
-                                            <segue destination="jBO-Z3-RhG" kind="presentation" identifier="showLoginOrRegisterVC2" id="azb-rC-bLP"/>
+                                            <segue destination="GMV-y8-MJt" kind="presentation" identifier="showLoginOrRegisterVC2" id="azb-rC-bLP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -247,7 +247,7 @@
                         <outlet property="menuListTable" destination="dC9-0O-whQ" id="BKy-Td-SxD"/>
                         <outlet property="reservateHotelButton" destination="amP-mP-JDn" id="Jlh-d0-jRj"/>
                         <outlet property="topLogoView" destination="R34-uV-reZ" id="sHL-cm-4KN"/>
-                        <segue destination="jBO-Z3-RhG" kind="presentation" identifier="showLoginOrRegisterVC1" id="cpT-KW-4ae"/>
+                        <segue destination="GMV-y8-MJt" kind="presentation" identifier="showLoginOrRegisterVC1" id="cpT-KW-4ae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3z-8e-Hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -262,33 +262,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6W3-Vg-8Ex">
-                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="loginOrRegisterVC" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-Qx-sLP">
-                                        <rect key="frame" x="10" y="0.0" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="kAC-fT-ajm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="X">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="closeButton:" destination="jBO-Z3-RhG" eventType="touchUpInside" id="fvt-F4-ngN"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="CQC-Qa-19r"/>
-                                    <constraint firstAttribute="bottom" secondItem="gkl-Qx-sLP" secondAttribute="bottom" id="jum-Bc-g87"/>
-                                    <constraint firstItem="gkl-Qx-sLP" firstAttribute="leading" secondItem="6W3-Vg-8Ex" secondAttribute="leading" constant="10" id="snn-fr-JoP"/>
-                                    <constraint firstItem="gkl-Qx-sLP" firstAttribute="top" secondItem="6W3-Vg-8Ex" secondAttribute="top" id="y4V-F6-Mqf"/>
-                                </constraints>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cw8-CE-L2L" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="74" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="77L-Ay-pAa"/>
@@ -311,28 +286,28 @@
                                 </cells>
                             </collectionView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-TV-POa">
-                                <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Cw8-CE-L2L" firstAttribute="top" secondItem="XQU-N6-PGb" secondAttribute="top" id="ESq-Ng-K1v"/>
                             <constraint firstItem="XQU-N6-PGb" firstAttribute="bottom" secondItem="jOE-TV-POa" secondAttribute="bottom" id="JYx-Ex-fUc"/>
                             <constraint firstItem="jOE-TV-POa" firstAttribute="top" secondItem="Cw8-CE-L2L" secondAttribute="bottom" id="Jyx-K0-d8q"/>
-                            <constraint firstItem="6W3-Vg-8Ex" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="MRF-Tn-6kq"/>
                             <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="Cw8-CE-L2L" secondAttribute="trailing" id="Vmf-rG-gMo"/>
                             <constraint firstItem="jOE-TV-POa" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="ca7-Pr-LlN"/>
-                            <constraint firstItem="Cw8-CE-L2L" firstAttribute="top" secondItem="6W3-Vg-8Ex" secondAttribute="bottom" id="dmz-hJ-ZNJ"/>
-                            <constraint firstItem="6W3-Vg-8Ex" firstAttribute="top" secondItem="XQU-N6-PGb" secondAttribute="top" id="gun-MO-49I"/>
                             <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="jOE-TV-POa" secondAttribute="trailing" id="iyo-iS-Ox3"/>
-                            <constraint firstItem="XQU-N6-PGb" firstAttribute="trailing" secondItem="6W3-Vg-8Ex" secondAttribute="trailing" id="nKP-NH-46d"/>
                             <constraint firstItem="Cw8-CE-L2L" firstAttribute="leading" secondItem="XQU-N6-PGb" secondAttribute="leading" id="tXA-7c-CzM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XQU-N6-PGb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N84-fC-ZXP">
+                        <barButtonItem key="leftBarButtonItem" title="X" id="T8f-L5-A10"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BR4-lf-Mn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="-429"/>
+            <point key="canvasLocation" x="4018.8405797101454" y="-465.40178571428567"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="eia-VP-dq6">
@@ -359,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqx-Op-YGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3876" y="-832"/>
+            <point key="canvasLocation" x="4785.507246376812" y="-832.36607142857144"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Vx8-Bx-uG5">
@@ -374,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oc-u2-z3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3875" y="-167"/>
+            <point key="canvasLocation" x="4784.057971014493" y="-167.41071428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Esp-SK-Xxt">
@@ -394,6 +369,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pf9-U6-gzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-537" y="7"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bro-70-D0g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GMV-y8-MJt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qjO-c2-0dm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jBO-Z3-RhG" kind="relationship" relationship="rootViewController" id="qXO-H8-aF4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJc-F2-grJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3108.6956521739135" y="-465.40178571428567"/>
         </scene>
     </scenes>
     <resources>
