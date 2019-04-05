@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
     let emailTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 145.0, width: UIScreen.main.bounds.width - 20, height: 45.0))
     let passwordTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 210.0, width: UIScreen.main.bounds.width - 20, height: 45))
     
-    let forgetPassword = UIButton(frame: CGRect(x: 90.0, y: 285.0, width: 180, height: 30))
+    let forgetPassword = UIButton(frame: CGRect(x: 10.0, y: 275.0, width: UIScreen.main.bounds.width - 20, height: 30))
     let loginButton = UIButton(frame: CGRect(x: 10.0, y: 305, width: UIScreen.main.bounds.width - 20, height: 45))
     
     
@@ -29,20 +29,34 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         passwordTextField.placeholderFontScale = 0.77
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.placeholderColor = .darkGray
+        passwordTextField.isSecureTextEntry = true
         
         
-//        let passwordTitle: UIFont! = UIFont(name: "Helvetica", size: 15)
-        forgetPassword.titleLabel?.text = "비밀번호를 잊으셨나요?"
-//        forgetPassword.titleLabel?.font = passwordTitle
+        let passwordTitle: UIFont! = UIFont(name: "HelveticaNeue", size: 15)
+        forgetPassword.setTitle("비밀번호를 잊으셨나요?", for: UIControl.State.normal)
+        forgetPassword.titleLabel?.font = passwordTitle
         forgetPassword.setTitleColor(.blue, for: UIControl.State.normal)
-        forgetPassword.backgroundColor = .lightGray
+        
+        
+        let loginTitle: UIFont! = UIFont(name: "HelveticaNeue-bold", size: 15)
+        loginButton.setTitle("로그인", for: UIControl.State.normal)
+        loginButton.titleLabel?.font = loginTitle
+        loginButton.setTitleColor(.white, for: UIControl.State.normal)
+        loginButton.backgroundColor = .blue
+        loginButton.layer.cornerRadius = 10
+        loginButton.layer.masksToBounds = true
+        
+//        loginButton.addTarget(self, action: #selector(loginButtonTest), for: .touchUpInside)
+
         
         self.view.addSubview(emailTextField)
         self.view.addSubview(passwordTextField)
         self.view.addSubview(forgetPassword)
         self.view.addSubview(loginButton)
     }
-    
+//    @objc func loginButtonTest() {
+//        dismiss(animated: true, completion: nil)
+//    }
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "로그인")
     }

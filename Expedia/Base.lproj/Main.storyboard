@@ -220,6 +220,9 @@
                                 <state key="normal" title="호텔 예약하기" image="hotel_icon">
                                     <color key="titleColor" red="0.050980392156862744" green="0.047058823529411764" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="reservationHottelButtonAction:" destination="9OD-QG-sqk" eventType="touchUpInside" id="sqy-gg-AUm"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-0O-whQ">
                                 <rect key="frame" x="0.0" y="144" width="414" height="669"/>
@@ -409,6 +412,6 @@
         <image name="topLogoImg" width="640" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="azb-rC-bLP"/>
+        <segue reference="cpT-KW-4ae"/>
     </inferredMetricsTieBreakers>
 </document>

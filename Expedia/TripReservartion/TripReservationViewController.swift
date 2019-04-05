@@ -13,7 +13,8 @@ class TripReservationViewController: UIViewController {
     @IBOutlet weak var topLogoView: UIView!
     @IBOutlet weak var reservateHotelButton: UIButton!
     @IBOutlet weak var menuListTable: UITableView!
-    
+    @IBAction func reservationHottelButtonAction(_ sender: Any) {
+    }
     
     func updateUI() {
         self.topLogoView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
