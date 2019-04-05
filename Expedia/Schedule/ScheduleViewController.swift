@@ -15,10 +15,14 @@ class ScheduleViewController: UIViewController {
     @IBOutlet weak var URLAndCountryView: UIView!
     @IBOutlet weak var urlLabel: UILabel!
     @IBOutlet weak var countryButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     func updateUI() {
-        self.topLabelView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
-        self.URLAndCountryView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
+        topLabelView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
+        URLAndCountryView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
+        loginButton.layer.cornerRadius = 10.0
+        loginButton.layer.masksToBounds = true
+        
     }
     
     override func viewDidLoad() {
