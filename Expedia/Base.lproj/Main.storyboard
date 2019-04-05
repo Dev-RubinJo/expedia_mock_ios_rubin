@@ -86,10 +86,12 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tV3-q5-pmC">
                                         <rect key="frame" x="5" y="130" width="404" height="60"/>
+                                        <color key="backgroundColor" red="0.0020353891886770725" green="0.35280832648277283" blue="0.92038851976394653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ABx-Mc-0GU"/>
                                         </constraints>
-                                        <state key="normal" image="LoginToExpedia"/>
+                                        <inset key="imageEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="익스피디아에 로그인" image="LoginToExpedia"/>
                                         <connections>
                                             <segue destination="GMV-y8-MJt" kind="presentation" identifier="showLoginOrRegisterVC2" id="azb-rC-bLP"/>
                                         </connections>
@@ -125,6 +127,7 @@
                     <connections>
                         <outlet property="URLAndCountryView" destination="cxC-Vn-j6F" id="2VB-a0-Zqd"/>
                         <outlet property="countryButton" destination="1AC-tZ-7Dp" id="KQe-Tz-hEw"/>
+                        <outlet property="loginButton" destination="tV3-q5-pmC" id="68R-EM-LBF"/>
                         <outlet property="topLabelView" destination="bay-DU-PWX" id="G6R-N2-BND"/>
                         <outlet property="urlLabel" destination="3ay-Ts-hKv" id="fHk-15-wnL"/>
                     </connections>
@@ -222,6 +225,7 @@
                                 </state>
                                 <connections>
                                     <action selector="reservationHottelButtonAction:" destination="9OD-QG-sqk" eventType="touchUpInside" id="sqy-gg-AUm"/>
+                                    <segue destination="gBz-UD-dtq" kind="show" id="8Zs-Ef-gv3"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-0O-whQ">
@@ -257,20 +261,45 @@
             </objects>
             <point key="canvasLocation" x="381" y="-961"/>
         </scene>
-        <!--View Controller-->
+        <!--Reserve Hotel View Controller-->
         <scene sceneID="Fzw-Xb-dE9">
             <objects>
-                <viewController id="uDd-Tc-PWr" sceneMemberID="viewController">
+                <viewController id="uDd-Tc-PWr" customClass="ReserveHotelViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gZc-nF-qT3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGd-0S-44Y">
+                                <rect key="frame" x="10" y="103" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2ws-D5-lzU"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="아"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lGd-0S-44Y" firstAttribute="leading" secondItem="ciw-kg-Uzw" secondAttribute="leading" constant="10" id="AJs-u5-Gel"/>
+                            <constraint firstItem="ciw-kg-Uzw" firstAttribute="trailing" secondItem="lGd-0S-44Y" secondAttribute="trailing" constant="10" id="Fqw-F6-ymo"/>
+                            <constraint firstItem="lGd-0S-44Y" firstAttribute="top" secondItem="ciw-kg-Uzw" secondAttribute="top" constant="15" id="o2U-dr-Lle"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ciw-kg-Uzw"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CtR-c4-Sl0">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="J8Y-7s-Z9k">
+                            <connections>
+                                <action selector="closeButton:" destination="uDd-Tc-PWr" id="K4Y-9w-aSe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inputDestinationButton" destination="lGd-0S-44Y" id="WEc-yd-GTS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rv-hu-OUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="-1528"/>
+            <point key="canvasLocation" x="2142" y="-1904"/>
         </scene>
         <!--Login Or Register View Controller-->
         <scene sceneID="nlz-DN-o81">
@@ -414,9 +443,27 @@
             </objects>
             <point key="canvasLocation" x="3108.6956521739135" y="-465.40178571428567"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nck-RD-Pxy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBz-UD-dtq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WmS-R9-cjp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uDd-Tc-PWr" kind="relationship" relationship="rootViewController" id="Eu1-4h-rLX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MxD-cI-Rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="-1469"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="LoginToExpedia" width="584.5" height="79.5"/>
+        <image name="LoginToExpedia" width="22" height="22.333333969116211"/>
         <image name="bagC" width="18" height="15"/>
         <image name="bagL" width="25" height="20.5"/>
         <image name="hotel_icon" width="25" height="25"/>
@@ -427,6 +474,6 @@
         <image name="topLogoImg" width="640" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cpT-KW-4ae"/>
+        <segue reference="azb-rC-bLP"/>
     </inferredMetricsTieBreakers>
 </document>

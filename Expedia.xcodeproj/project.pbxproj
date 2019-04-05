@@ -184,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				43546E912251C087005A0AB7 /* TripReservationViewController.swift */,
-				43546ECD225301EE005A0AB7 /* TRCustomCell */,
 				43FB1BD12257266B0004EB7B /* ReserveHotelViewController.swift */,
+				43546ECD225301EE005A0AB7 /* TRCustomCell */,
 			);
 			path = TripReservartion;
 			sourceTree = "<group>";
