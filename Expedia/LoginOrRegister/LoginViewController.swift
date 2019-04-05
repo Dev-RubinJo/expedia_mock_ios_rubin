@@ -20,11 +20,6 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
     
     
     func updateUI() {
-        self.view.addSubview(emailTextField)
-        self.view.addSubview(passwordTextField)
-        self.view.addSubview(forgetPassword)
-        self.view.addSubview(loginButton)
-        
         emailTextField.placeholder = " 이메일 주소"
         emailTextField.placeholderFontScale = 0.77
         emailTextField.borderStyle = .roundedRect
@@ -35,12 +30,17 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.placeholderColor = .darkGray
         
-        let passwordTitle: UIFont! = UIFont(name: "비밀번호를 잊으셨나요?", size: 15)
         
-        forgetPassword.titleLabel?.font = passwordTitle
-        
+//        let passwordTitle: UIFont! = UIFont(name: "Helvetica", size: 15)
+        forgetPassword.titleLabel?.text = "비밀번호를 잊으셨나요?"
+//        forgetPassword.titleLabel?.font = passwordTitle
         forgetPassword.setTitleColor(.blue, for: UIControl.State.normal)
+        forgetPassword.backgroundColor = .lightGray
         
+        self.view.addSubview(emailTextField)
+        self.view.addSubview(passwordTextField)
+        self.view.addSubview(forgetPassword)
+        self.view.addSubview(loginButton)
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
