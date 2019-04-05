@@ -12,23 +12,34 @@ class ReserveHotelViewController: UIViewController {
     
     var inputDestinationButtonText: String = "목적지 입력"
     var destination: String?
+    var inputDateButtonText: String = "날짜 선택"
     
     
     @IBOutlet weak var inputDestinationButton: UIButton!
+    @IBOutlet weak var inputDateButton: UIButton!
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     func updateUI() {
         self.navigationItem.title = "호텔 예약하기"
-        let inputDestinationButtonFont: UIFont! = UIFont(name: "HelveticaNeue", size: 17.0)
+        
+        let inputButtonFont: UIFont! = UIFont(name: "HelveticaNeue", size: 17.0)
         inputDestinationButton.setTitle("\(inputDestinationButtonText)", for: UIControl.State.normal)
-        inputDestinationButton.titleLabel?.font = inputDestinationButtonFont
+        inputDestinationButton.titleLabel?.font = inputButtonFont
         inputDestinationButton.setTitleColor(.lightGray, for: UIControl.State.normal)
         inputDestinationButton.layer.borderColor = UIColor.lightGray.cgColor
         inputDestinationButton.layer.borderWidth = 1.0
         inputDestinationButton.layer.cornerRadius = 10.0
         inputDestinationButton.layer.masksToBounds = true
+        
+        inputDateButton.setTitle("\(inputDateButtonText)", for: UIControl.State.normal)
+        inputDateButton.titleLabel?.font = inputButtonFont
+        inputDateButton.setTitleColor(.lightGray, for: UIControl.State.normal)
+        inputDateButton.layer.borderColor = UIColor.lightGray.cgColor
+        inputDateButton.layer.borderWidth = 1.0
+        inputDateButton.layer.cornerRadius = 10.0
+        inputDateButton.layer.masksToBounds = true
     }
     
     override func viewDidLoad() {
