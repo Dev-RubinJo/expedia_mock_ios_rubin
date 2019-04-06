@@ -16,6 +16,7 @@ class ReserveHotelViewController: UIViewController {
     var inputDateButtonText: String = "날짜 선택"
     
     var inputPeopleNumberButtonText: String = "인원 수"
+    var peopleNumber: String = "1명"
     
     @IBOutlet weak var inputDestinationButton: UIButton!
     @IBOutlet weak var inputDateButton: UIButton!
@@ -37,6 +38,7 @@ class ReserveHotelViewController: UIViewController {
         inputDestinationButton.layer.borderWidth = 1.0
         inputDestinationButton.layer.cornerRadius = 10.0
         inputDestinationButton.layer.masksToBounds = true
+        inputDestinationButton.addTarget(self, action: #selector(presentLocationViewController), for: .touchUpInside)
         
         inputDateButton.setTitle("\(inputDateButtonText)", for: UIControl.State.normal)
         inputDateButton.titleLabel?.font = inputButtonFont
@@ -55,9 +57,18 @@ class ReserveHotelViewController: UIViewController {
         inputPeopleNumberButton.layer.masksToBounds = true
     }
     
+    @objc func presentLocationViewController() {
+        let storyboard = self.storyboard!
+        let locationVC = storyboard.instantiateViewController(withIdentifier: "setLocationVC") as! SetLocationViewController
+        present(locationVC, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        let storyboard = self.storyboard!
+        let locationVC = storyboard.instantiateViewController(withIdentifier: "setLocationVC") as! SetLocationViewController
+        present(locationVC, animated: true, completion: nil)
         // Do any additional setup after loading the view.
     }
 
