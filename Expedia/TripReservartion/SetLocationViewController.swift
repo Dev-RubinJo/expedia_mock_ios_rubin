@@ -14,6 +14,7 @@ class SetLocationViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
 
     
+    @IBOutlet weak var backgroundView: UIView!
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -26,10 +27,10 @@ class SetLocationViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
