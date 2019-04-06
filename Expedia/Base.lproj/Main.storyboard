@@ -336,6 +336,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-s2-zgb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                <color key="backgroundColor" red="0.97636479139328003" green="0.97653168439865112" blue="0.97635418176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="jbC-K9-5I6"/>
+                                </constraints>
+                            </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9z-4Z-m9g">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
@@ -352,17 +359,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="H9z-4Z-m9g" firstAttribute="trailing" secondItem="9hQ-vf-dvr" secondAttribute="trailing" id="Dor-xa-Irm"/>
+                            <constraint firstItem="gc2-s2-zgb" firstAttribute="leading" secondItem="9hQ-vf-dvr" secondAttribute="leading" id="Ltj-uv-aoN"/>
+                            <constraint firstItem="gc2-s2-zgb" firstAttribute="top" secondItem="s7o-C7-JJr" secondAttribute="top" id="Qcj-7b-30f"/>
                             <constraint firstItem="H9z-4Z-m9g" firstAttribute="top" secondItem="9hQ-vf-dvr" secondAttribute="top" id="dXf-WR-z9F"/>
                             <constraint firstItem="H9z-4Z-m9g" firstAttribute="leading" secondItem="9hQ-vf-dvr" secondAttribute="leading" id="mm0-xD-ygD"/>
+                            <constraint firstItem="9hQ-vf-dvr" firstAttribute="trailing" secondItem="gc2-s2-zgb" secondAttribute="trailing" id="muN-ky-nUR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9hQ-vf-dvr"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="gc2-s2-zgb" id="C0Z-b6-89N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCp-5l-Yhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886" y="-2552"/>
+            <point key="canvasLocation" x="2885.507246376812" y="-2552.0089285714284"/>
         </scene>
         <!--Login Or Register View Controller-->
         <scene sceneID="nlz-DN-o81">
