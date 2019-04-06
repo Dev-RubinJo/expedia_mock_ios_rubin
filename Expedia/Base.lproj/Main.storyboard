@@ -287,13 +287,25 @@
                                 <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="calendar"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-KM-AFC">
+                                <rect key="frame" x="10" y="243" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dun-0t-yX0"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="profile_icL"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lGd-0S-44Y" firstAttribute="leading" secondItem="ciw-kg-Uzw" secondAttribute="leading" constant="10" id="AJs-u5-Gel"/>
                             <constraint firstItem="ciw-kg-Uzw" firstAttribute="trailing" secondItem="lGd-0S-44Y" secondAttribute="trailing" constant="10" id="Fqw-F6-ymo"/>
                             <constraint firstItem="ciw-kg-Uzw" firstAttribute="trailing" secondItem="jUQ-dh-DO6" secondAttribute="trailing" constant="10" id="MF2-9z-vft"/>
+                            <constraint firstItem="GDn-KM-AFC" firstAttribute="leading" secondItem="ciw-kg-Uzw" secondAttribute="leading" constant="10" id="PdN-jS-XmJ"/>
                             <constraint firstItem="jUQ-dh-DO6" firstAttribute="top" secondItem="lGd-0S-44Y" secondAttribute="bottom" constant="20" id="XHj-ZH-pbA"/>
+                            <constraint firstItem="ciw-kg-Uzw" firstAttribute="trailing" secondItem="GDn-KM-AFC" secondAttribute="trailing" constant="10" id="d4V-QM-I8Q"/>
+                            <constraint firstItem="GDn-KM-AFC" firstAttribute="top" secondItem="jUQ-dh-DO6" secondAttribute="bottom" constant="20" id="j4c-4M-wLD"/>
                             <constraint firstItem="lGd-0S-44Y" firstAttribute="top" secondItem="ciw-kg-Uzw" secondAttribute="top" constant="15" id="o2U-dr-Lle"/>
                             <constraint firstItem="jUQ-dh-DO6" firstAttribute="leading" secondItem="ciw-kg-Uzw" secondAttribute="leading" constant="10" id="wqi-mw-b1j"/>
                         </constraints>
@@ -309,11 +321,27 @@
                     <connections>
                         <outlet property="inputDateButton" destination="jUQ-dh-DO6" id="ztN-7h-ekl"/>
                         <outlet property="inputDestinationButton" destination="lGd-0S-44Y" id="WEc-yd-GTS"/>
+                        <outlet property="inputPeopleNumberButton" destination="GDn-KM-AFC" id="66X-4i-PdZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rv-hu-OUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2142" y="-1904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eSy-cZ-Xaf">
+            <objects>
+                <viewController id="4FL-QG-CS6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s7o-C7-JJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9hQ-vf-dvr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCp-5l-Yhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3217" y="-2396"/>
         </scene>
         <!--Login Or Register View Controller-->
         <scene sceneID="nlz-DN-o81">

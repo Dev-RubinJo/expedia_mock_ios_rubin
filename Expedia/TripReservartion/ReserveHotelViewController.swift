@@ -12,11 +12,16 @@ class ReserveHotelViewController: UIViewController {
     
     var inputDestinationButtonText: String = "목적지 입력"
     var destination: String?
+    
     var inputDateButtonText: String = "날짜 선택"
     
+    var inputPeopleNumberButtonText: String = "인원 수"
     
     @IBOutlet weak var inputDestinationButton: UIButton!
     @IBOutlet weak var inputDateButton: UIButton!
+    @IBOutlet weak var inputPeopleNumberButton: UIButton!
+    
+    
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -40,6 +45,14 @@ class ReserveHotelViewController: UIViewController {
         inputDateButton.layer.borderWidth = 1.0
         inputDateButton.layer.cornerRadius = 10.0
         inputDateButton.layer.masksToBounds = true
+        
+        inputPeopleNumberButton.setTitle("\(inputPeopleNumberButtonText)", for: UIControl.State.normal)
+        inputPeopleNumberButton.titleLabel?.font = inputButtonFont
+        inputPeopleNumberButton.setTitleColor(.lightGray, for: UIControl.State.normal)
+        inputPeopleNumberButton.layer.borderColor = UIColor.lightGray.cgColor
+        inputPeopleNumberButton.layer.borderWidth = 1.0
+        inputPeopleNumberButton.layer.cornerRadius = 10.0
+        inputPeopleNumberButton.layer.masksToBounds = true
     }
     
     override func viewDidLoad() {

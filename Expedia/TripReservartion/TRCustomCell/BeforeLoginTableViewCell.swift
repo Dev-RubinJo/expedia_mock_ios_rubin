@@ -12,7 +12,8 @@ class BeforeLoginTableViewCell: UITableViewCell {
 
     @IBOutlet weak var beforeLoginView: UIView!
     @IBOutlet weak var loginOrRegisterButton: UIButton!
-    @IBAction func presentLRViewControllerButton(_ sender: Any) {
+    @IBAction func presentLRViewControllerButton(_ sender: UIButton) {
+        
         
     }
     
@@ -22,5 +23,4 @@ class BeforeLoginTableViewCell: UITableViewCell {
         beforeLoginView.layer.masksToBounds = true
         loginOrRegisterButton.layer.addBorder([.top], color: UIColor.lightGray, width: 0.5)
     }
-    
 }
