@@ -12,10 +12,6 @@ class BeforeLoginTableViewCell: UITableViewCell {
 
     @IBOutlet weak var beforeLoginView: UIView!
     @IBOutlet weak var loginOrRegisterButton: UIButton!
-    @IBAction func presentLRViewControllerButton(_ sender: UIButton) {
-        
-        
-    }
     
     
     func updateUI() {

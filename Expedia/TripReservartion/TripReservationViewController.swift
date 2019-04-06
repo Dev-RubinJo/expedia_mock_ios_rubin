@@ -49,6 +49,10 @@ class TripReservationViewController: UIViewController {
         menuListTable.register(limitedPriceNibName, forCellReuseIdentifier: "limitedDatePriceTVC")
         
     }
+    
+    @objc func presentLoginOrRegisterVC() {
+        performSegue(withIdentifier: "showLoginOrRegisterVC1", sender: nil)
+    }
 
 
 }
@@ -61,6 +65,7 @@ extension TripReservationViewController: UITableViewDelegate, UITableViewDataSou
         if indexPath.row == 0 {
             guard let beforeLoginCell = menuListTable.dequeueReusableCell(withIdentifier: "beforeLoginTVC", for: indexPath) as? BeforeLoginTableViewCell else { return UITableViewCell() }
             beforeLoginCell.updateUI()
+            beforeLoginCell.loginOrRegisterButton.addTarget(self, action: #selector(presentLoginOrRegisterVC), for: .touchUpInside)
             return beforeLoginCell
         } else if indexPath.row == 1 {
             guard let todayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "todayPriceTVC", for: indexPath) as? TodayPriceTableViewCell else { return UITableViewCell() }

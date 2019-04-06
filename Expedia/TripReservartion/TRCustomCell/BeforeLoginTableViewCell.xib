@@ -36,9 +36,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="로그인 또는 회원가입"/>
-                                <connections>
-                                    <action selector="presentLRViewControllerButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vq6-Fg-zYp"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익스피디아 회원으로 예약!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-eg-hsN">
                                 <rect key="frame" x="10" y="45" width="280" height="21"/>
