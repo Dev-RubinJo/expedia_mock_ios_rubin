@@ -57,6 +57,7 @@
             <connections>
                 <outlet property="daydayPriceButton" destination="HlH-qN-CUq" id="9aC-OT-07E"/>
             </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
         </tableViewCell>
     </objects>
     <resources>
