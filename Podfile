@@ -10,6 +10,7 @@ target 'Expedia' do
   pod 'XLPagerTabStrip'
   pod 'SegementSlide'
   pod 'TextFieldEffects'
+  pod 'SnapKit'
   # Pods for Expedia
 
   target 'ExpediaTests' do
