@@ -294,7 +294,7 @@
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" image="profile_icL"/>
+                                <state key="normal" image="people"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -312,7 +312,7 @@
                         <viewLayoutGuide key="safeArea" id="ciw-kg-Uzw"/>
                     </view>
                     <navigationItem key="navigationItem" id="CtR-c4-Sl0">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="J8Y-7s-Z9k">
+                        <barButtonItem key="leftBarButtonItem" image="left-arrow" id="J8Y-7s-Z9k">
                             <connections>
                                 <action selector="closeButton:" destination="uDd-Tc-PWr" id="K4Y-9w-aSe"/>
                             </connections>
@@ -328,20 +328,41 @@
             </objects>
             <point key="canvasLocation" x="2142" y="-1904"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Location View Controller-->
         <scene sceneID="eSy-cZ-Xaf">
             <objects>
-                <viewController id="4FL-QG-CS6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="setLocationVC" id="4FL-QG-CS6" customClass="SetLocationViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s7o-C7-JJr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9z-4Z-m9g">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="호텔 예약하기" id="EjN-MA-hXO">
+                                        <barButtonItem key="leftBarButtonItem" title="X" id="a4E-sY-J5Y">
+                                            <connections>
+                                                <action selector="closeButton:" destination="4FL-QG-CS6" id="5t5-vW-rkt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H9z-4Z-m9g" firstAttribute="trailing" secondItem="9hQ-vf-dvr" secondAttribute="trailing" id="Dor-xa-Irm"/>
+                            <constraint firstItem="H9z-4Z-m9g" firstAttribute="top" secondItem="9hQ-vf-dvr" secondAttribute="top" id="dXf-WR-z9F"/>
+                            <constraint firstItem="H9z-4Z-m9g" firstAttribute="leading" secondItem="9hQ-vf-dvr" secondAttribute="leading" id="mm0-xD-ygD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9hQ-vf-dvr"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCp-5l-Yhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3217" y="-2396"/>
+            <point key="canvasLocation" x="2886" y="-2552"/>
         </scene>
         <!--Login Or Register View Controller-->
         <scene sceneID="nlz-DN-o81">
@@ -510,7 +531,9 @@
         <image name="bagL" width="25" height="20.5"/>
         <image name="calendar" width="25" height="25"/>
         <image name="hotel_icon" width="25" height="25"/>
+        <image name="left-arrow" width="25" height="25"/>
         <image name="location-pointer" width="25" height="25"/>
+        <image name="people" width="25" height="25"/>
         <image name="profile_icC" width="18" height="18"/>
         <image name="profile_icL" width="25" height="25"/>
         <image name="searchC" width="18" height="16.5"/>
