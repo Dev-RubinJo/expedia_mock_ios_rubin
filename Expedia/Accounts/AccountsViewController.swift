@@ -46,6 +46,7 @@ class AccountsViewController: UIViewController {
         button.setTitle("익스피디아에 로그인", for: UIControl.State.normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.regular)
         button.setImage(UIImage(named: "LoginToExpedia"), for: UIControl.State.normal)
+        button.imageEdgeInsets.left = -40
         button.layer.cornerRadius = 10.0
         return button
     }()
@@ -92,6 +93,37 @@ class AccountsViewController: UIViewController {
         
         return button
     }()
+    let modifyAccountView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.white
+        return view
+    }()
+    let modifyAccountButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    let supportLabel: UILabel = {
+        let label = UILabel()
+        label.text = "고객 지원"
+        label.font = UIFont.systemFont(ofSize: 17, weight: .light)
+        label.textColor = UIColor.black
+        label.textAlignment = NSTextAlignment.left
+        return label
+    }()
+    let expediaWebView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.white
+        return view
+    }()
+    let expediaWebButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("익스피디아 웹사이트", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .light)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.setImage(UIImage(named: "right-arrow"), for: .normal)
+        button.imageEdgeInsets.right = 10
+        return button
+    }()
     
     func updateUI(isLogin: Bool) {
         
@@ -117,6 +149,8 @@ class AccountsViewController: UIViewController {
             make.height.equalTo(1140)
             make.width.equalTo(UIScreen.main.bounds.width)
         }
+        
+        
         if isLogin == false {
             self.mainScrollView.addSubview(loginButton)
             loginButton.snp.makeConstraints { make in
@@ -149,7 +183,33 @@ class AccountsViewController: UIViewController {
                 make.top.equalTo(currencyLabel.snp.bottom).offset(5)
                 make.leading.equalTo(10)
             }
-        } else {
+            self.currencyCell.addSubview(countryLabel)
+            countryLabel.snp.makeConstraints { make in
+                make.top.equalTo(10)
+                make.leading.equalTo(UIScreen.main.bounds.width / 2)
+            }
+            self.mainScrollView.addSubview(supportLabel)
+            supportLabel.snp.makeConstraints{ make in
+                make.top.equalTo(currencyCell.snp.bottom).offset(10)
+                make.leading.equalTo(10)
+                make.height.equalTo(40)
+            }
+            self.mainScrollView.addSubview(expediaWebView)
+            expediaWebView.snp.makeConstraints { make in
+                make.top.equalTo(supportLabel.snp.bottom).offset(0)
+                make.leading.equalTo(0)
+                make.trailing.equalTo(0)
+                make.height.equalTo(40)
+            }
+            self.expediaWebView.addSubview(expediaWebButton)
+            expediaWebButton.snp.makeConstraints { make in
+                make.top.equalTo(5)
+                make.leading.equalTo(10)
+                make.trailing.equalTo(0)
+            }
+            
+            
+        } else if isLogin == true {
             self.mainScrollView.addSubview(accountLabel)
             accountLabel.snp.makeConstraints { make in
                 make.top.equalTo(mainScrollView.snp.top).offset(10)
@@ -173,6 +233,12 @@ class AccountsViewController: UIViewController {
                 make.top.equalTo(currencyLabel.snp.bottom).offset(5)
                 make.leading.equalTo(10)
             }
+            self.currencyCell.addSubview(countryLabel)
+            countryLabel.snp.makeConstraints { make in
+                make.top.equalTo(10)
+                make.leading.equalTo(UIScreen.main.bounds.width / 2)
+            }
+            
             
         }
         
@@ -182,43 +248,7 @@ class AccountsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI(isLogin: self.isLogin)
-        
-        
-//        accountTableView.delegate = self
-//        accountTableView.dataSource = self
-        
-//        let currencyCellNibName = UINib(nibName: "CurrencyTableViewCell", bundle: nil)
-//        accountTableView.register(currencyCellNibName, forCellReuseIdentifier: "currencyCell")
-//        let withRightArrowCellNibName = UINib(nibName: "WithRightArrowTableViewCell", bundle: nil)
-//        accountTableView.register(withRightArrowCellNibName, forCellReuseIdentifier: "withRightRowCell")
-//        let defaultCellNibName = UINib(nibName: "DefaultTableViewCell", bundle: nil)
-//        accountTableView.register(defaultCellNibName, forCellReuseIdentifier: "defaultCell")
-        
-        // Do any additional setup after loading the view.
     }
 
 }
 
-/*
-extension AccountsViewController: UITableViewDelegate, UITableViewDataSource {
-
-    
-    // 반드시 로그인과 비로그인 상태의 변화를 꼭 주어야할 것
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return data.sectionsIfNLogin.count
-    }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return data.sectionsIfNLogin[section]
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.cellsIfNLogin[section].count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
-    
-    
-    
-}
-*/
