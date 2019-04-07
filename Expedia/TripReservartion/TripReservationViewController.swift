@@ -55,9 +55,6 @@ class TripReservationViewController: UIViewController {
 }
 extension TripReservationViewController: UITableViewDelegate, UITableViewDataSource {
    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return self.data.sections.count
-    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
