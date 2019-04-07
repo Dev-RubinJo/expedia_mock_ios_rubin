@@ -24,7 +24,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="230" id="T9w-hc-B8g"/>
                         </constraints>
-                        <state key="normal" image="daydayPrice"/>
+                        <state key="normal" image="day"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="일일 특가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkb-tr-DP2">
                         <rect key="frame" x="15" y="184" width="295" height="24"/>
@@ -61,6 +61,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="daydayPrice" width="682.66668701171875" height="512"/>
+        <image name="day" width="682.66668701171875" height="512"/>
     </resources>
 </document>

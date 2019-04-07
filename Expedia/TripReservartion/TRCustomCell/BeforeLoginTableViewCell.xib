@@ -79,6 +79,7 @@
             <connections>
                 <outlet property="beforeLoginView" destination="dx1-tf-CkJ" id="jB7-fK-VM0"/>
                 <outlet property="loginOrRegisterButton" destination="wjQ-cG-2Vo" id="5Wb-J8-aBN"/>
+                <outlet property="memberReservationLogo" destination="r5Z-OB-GEH" id="hQ4-OW-GrF"/>
             </connections>
         </tableViewCell>
     </objects>

@@ -27,7 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="230" id="CFa-4V-ivm"/>
                                 </constraints>
-                                <state key="normal" image="eightPriceHotel"/>
+                                <state key="normal" image="eight"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="₩80,000 이하 특가 호텔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkx-UN-Ceg">
                                 <rect key="frame" x="15" y="168" width="275" height="24"/>
@@ -72,6 +72,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="eightPriceHotel" width="604" height="364"/>
+        <image name="eight" width="604" height="364"/>
     </resources>
 </document>

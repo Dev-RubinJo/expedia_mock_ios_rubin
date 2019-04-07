@@ -11,6 +11,9 @@ import UIKit
 class TripReservationViewController: UIViewController {
     
     let reservateHotelButtonColor: UIColor = UIColor()
+    
+    let data = TripReservationCellData()
+    
 
     @IBOutlet weak var topLogoView: UIView!
     @IBOutlet weak var reservateHotelButton: UIButton!
@@ -52,8 +55,9 @@ class TripReservationViewController: UIViewController {
 }
 extension TripReservationViewController: UITableViewDelegate, UITableViewDataSource {
    
-    let data = TripReservationCellData()
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.data.sections.count
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
