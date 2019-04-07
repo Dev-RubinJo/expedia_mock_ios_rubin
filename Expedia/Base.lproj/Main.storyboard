@@ -141,42 +141,12 @@
             <objects>
                 <viewController id="RVI-kj-69H" customClass="AccountsViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="boM-Ax-rjd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1140"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ba5-Sw-aI7">
-                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9B-Pq-mha">
-                                        <rect key="frame" x="10" y="5" width="394" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="8v6-v7-6yn"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="G9B-Pq-mha" firstAttribute="top" secondItem="ba5-Sw-aI7" secondAttribute="top" constant="5" id="9wc-XL-IbM"/>
-                                    <constraint firstAttribute="bottom" secondItem="G9B-Pq-mha" secondAttribute="bottom" constant="5" id="ECs-ub-bni"/>
-                                    <constraint firstAttribute="trailing" secondItem="G9B-Pq-mha" secondAttribute="trailing" constant="10" id="GSx-Ee-ZuX"/>
-                                    <constraint firstItem="G9B-Pq-mha" firstAttribute="leading" secondItem="ba5-Sw-aI7" secondAttribute="leading" constant="10" id="bK2-GW-Mqy"/>
-                                    <constraint firstAttribute="height" constant="50" id="sgD-Lw-WVZ"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ba5-Sw-aI7" firstAttribute="top" secondItem="rIf-CI-ylv" secondAttribute="top" id="0De-QG-lXc"/>
-                            <constraint firstItem="rIf-CI-ylv" firstAttribute="trailing" secondItem="ba5-Sw-aI7" secondAttribute="trailing" id="LAA-2C-IqC"/>
-                            <constraint firstItem="ba5-Sw-aI7" firstAttribute="leading" secondItem="rIf-CI-ylv" secondAttribute="leading" id="QGo-B9-B96"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rIf-CI-ylv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="계정" image="profile_icL" landscapeImage="profile_icC" id="k6K-Ro-AbI"/>
-                    <size key="freeformSize" width="414" height="1140"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OW1-Ey-DrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
