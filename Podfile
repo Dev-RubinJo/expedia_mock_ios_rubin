@@ -11,6 +11,7 @@ target 'Expedia' do
   pod 'SegementSlide'
   pod 'TextFieldEffects'
   pod 'SnapKit'
+  pod 'SkyFloatingLabelTextField'
   # Pods for Expedia
 
   target 'ExpediaTests' do
