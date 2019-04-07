@@ -110,7 +110,7 @@ class AccountsViewController: UIViewController {
         label.textAlignment = NSTextAlignment.left
         return label
     }()
-    let expediaWebView: UIView = {
+    let supportView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.white
         return view
@@ -120,8 +120,30 @@ class AccountsViewController: UIViewController {
         button.setTitle("익스피디아 웹사이트", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .light)
         button.setTitleColor(UIColor.black, for: .normal)
+        button.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
         button.setImage(UIImage(named: "right-arrow"), for: .normal)
-        button.imageEdgeInsets.right = 10
+        button.semanticContentAttribute = .forceRightToLeft
+//        button.imageEdgeInsets.right = -200
+        return button
+    }()
+    let contactToReserveSupportButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("예약 지원에 연락하기", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .light)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
+        button.setImage(UIImage(named: "right-arrow"), for: .normal)
+        button.semanticContentAttribute = .forceRightToLeft
+        return button
+    }()
+    let contactToAppSupportButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("앱 지원에 연락하기", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .light)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
+        button.setImage(UIImage(named: "right-arrow"), for: .normal)
+        button.semanticContentAttribute = .forceRightToLeft
         return button
     }()
     
@@ -194,25 +216,43 @@ class AccountsViewController: UIViewController {
                 make.leading.equalTo(10)
                 make.height.equalTo(40)
             }
-            self.mainScrollView.addSubview(expediaWebView)
-            expediaWebView.snp.makeConstraints { make in
+            self.mainScrollView.addSubview(supportView)
+            supportView.snp.makeConstraints { make in
                 make.top.equalTo(supportLabel.snp.bottom).offset(0)
                 make.leading.equalTo(0)
                 make.trailing.equalTo(0)
-                make.height.equalTo(40)
+                make.height.equalTo(120)
             }
-            self.expediaWebView.addSubview(expediaWebButton)
+
+            self.supportView.addSubview(expediaWebButton)
+            expediaWebButton.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
             expediaWebButton.snp.makeConstraints { make in
-                make.top.equalTo(5)
+                make.top.equalTo(0)
                 make.leading.equalTo(10)
                 make.trailing.equalTo(0)
+                make.height.equalTo(40)
+            }
+            self.supportView.addSubview(contactToReserveSupportButton)
+            contactToReserveSupportButton.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
+            contactToReserveSupportButton.snp.makeConstraints { make in
+                make.top.equalTo(expediaWebButton.snp.bottom).offset(0)
+                make.leading.equalTo(10)
+                make.trailing.equalTo(0)
+                make.height.equalTo(40)
+            }
+            self.supportView.addSubview(contactToAppSupportButton)
+            contactToAppSupportButton.snp.makeConstraints { make in
+                make.top.equalTo(contactToReserveSupportButton.snp.bottom).offset(0)
+                make.leading.equalTo(10)
+                make.trailing.equalTo(0)
+                make.height.equalTo(40)
             }
             
             
         } else if isLogin == true {
             self.mainScrollView.addSubview(accountLabel)
             accountLabel.snp.makeConstraints { make in
-                make.top.equalTo(mainScrollView.snp.top).offset(10)
+                make.top.equalTo(mainScrollView.snp.top).offset(20)
                 make.leading.equalTo(10)
                 make.height.equalTo(40)
             }
