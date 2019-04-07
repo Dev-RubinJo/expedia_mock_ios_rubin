@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E6745EA3555598283AEE3E5F6D99A5EE"
+               BlueprintIdentifier = "8DB3F6239A991EAB9DDB845690BB2A47"
                BuildableName = "SegementSlide.framework"
                BlueprintName = "SegementSlide"
                ReferencedContainer = "container:Pods.xcodeproj">
