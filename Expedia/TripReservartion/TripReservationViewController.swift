@@ -43,6 +43,8 @@ class TripReservationViewController: UIViewController {
         menuListTable.register(daydayPriceNibName, forCellReuseIdentifier: "daydayPriceTVC")
         let limitedPriceNibName = UINib(nibName: "LimitedDatePriceTableViewCell", bundle: nil)
         menuListTable.register(limitedPriceNibName, forCellReuseIdentifier: "limitedDatePriceTVC")
+        let memberPriceNibName = UINib(nibName: "MemberPriceTableViewCell", bundle: nil)
+        menuListTable.register(memberPriceNibName, forCellReuseIdentifier: "memberPriceCell")
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -98,6 +100,10 @@ extension TripReservationViewController: UITableViewDelegate, UITableViewDataSou
                 guard let daydayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "daydayPriceTVC", for: indexPath) as? DayDayPriceTableViewCell else { return UITableViewCell() }
                 daydayPriceCell.updateUI()
                 return daydayPriceCell
+            } else if indexPath.row == 3 {
+                guard let memberPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "memberPriceCell", for: indexPath) as? MemberPriceTableViewCell else { return UITableViewCell() }
+                memberPriceCell.updateUI()
+                return memberPriceCell
             } else {
                 guard let limitedPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "limitedDatePriceTVC", for: indexPath) as? LimitedDatePriceTableViewCell else { return UITableViewCell() }
                 limitedPriceCell.updateUI()
