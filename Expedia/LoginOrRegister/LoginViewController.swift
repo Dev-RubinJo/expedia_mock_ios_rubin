@@ -9,33 +9,29 @@
 import UIKit
 import XLPagerTabStrip
 import TextFieldEffects
-import SkyFloatingLabelTextField
-import SnapKit
+import Alamofire
+
 
 class LoginViewController: UIViewController, IndicatorInfoProvider {
     
     let color = UIColor()
+    let data = LoginInfoData()
     
     let emailTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 145.0, width: UIScreen.main.bounds.width - 20, height: 45.0))
     let passwordTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 210.0, width: UIScreen.main.bounds.width - 20, height: 45))
-    
-    
-    let sampleTextField = SkyFloatingLabelTextField(frame: CGRect(x: 10, y: 400, width: UIScreen.main.bounds.width - 20, height: 40))
-    
-    
     
     let forgetPassword = UIButton(frame: CGRect(x: 10.0, y: 275.0, width: UIScreen.main.bounds.width - 20, height: 30))
     let loginButton = UIButton(frame: CGRect(x: 10.0, y: 305, width: UIScreen.main.bounds.width - 20, height: 45))
     
     
     func updateUI() {
-        emailTextField.placeholder = " 이메일 주소"
+        emailTextField.placeholder = "  이메일 주소"
         emailTextField.placeholderFontScale = 0.77
         emailTextField.borderStyle = .roundedRect
         emailTextField.placeholderColor = .darkGray
         
         
-        passwordTextField.placeholder = " 비밀번호"
+        passwordTextField.placeholder = "  비밀번호"
         passwordTextField.placeholderFontScale = 0.77
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.placeholderColor = .darkGray
@@ -56,19 +52,6 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         loginButton.layer.cornerRadius = 10
         loginButton.layer.masksToBounds = true
         
-        sampleTextField.placeholder = "test"
-        sampleTextField.title = "wow"
-        sampleTextField.tintColor = color.UIColorFromRGB(rgbValue: 0x00BBCC)
-        sampleTextField.textColor = .gray
-        sampleTextField.lineColor = .lightGray
-        sampleTextField.selectedTitleColor = color.UIColorFromRGB(rgbValue: 0x00BBCC)
-        sampleTextField.selectedLineColor = color.UIColorFromRGB(rgbValue: 0x00BBCC)
-        sampleTextField.layer.borderWidth = 1.0
-        sampleTextField.layer.borderColor = UIColor.blue.cgColor
-        
-        
-        self.view.addSubview(sampleTextField)
-        
 //        loginButton.addTarget(self, action: #selector(loginButtonTest), for: .touchUpInside)
 
         
@@ -80,6 +63,8 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
 //    @objc func loginButtonTest() {
 //        dismiss(animated: true, completion: nil)
 //    }
+    
+    // 상단 탭의 이름 설정.
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "로그인")
     }
