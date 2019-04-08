@@ -39,6 +39,8 @@
 		43FD3EAA225AEDBA0028F25A /* AccountsViewControllerBackUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EA9225AEDBA0028F25A /* AccountsViewControllerBackUp.swift */; };
 		43FD3EAC225B39300028F25A /* LoginInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EAB225B39300028F25A /* LoginInfoData.swift */; };
 		43FD3EAE225B5F950028F25A /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EAD225B5F950028F25A /* ToggleButton.swift */; };
+		43FD3EB1225B88EE0028F25A /* MemberPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EAF225B88EE0028F25A /* MemberPriceTableViewCell.swift */; };
+		43FD3EB2225B88EE0028F25A /* MemberPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FD3EB0225B88EE0028F25A /* MemberPriceTableViewCell.xib */; };
 		43FE888422599D7700BC2419 /* EightPriceHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE888322599D7700BC2419 /* EightPriceHotelViewController.swift */; };
 		43FE88862259D86400BC2419 /* AccountsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE88852259D86400BC2419 /* AccountsData.swift */; };
 		43FE888A2259DB9600BC2419 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE88882259DB9600BC2419 /* CurrencyTableViewCell.swift */; };
@@ -109,6 +111,8 @@
 		43FD3EA9225AEDBA0028F25A /* AccountsViewControllerBackUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewControllerBackUp.swift; sourceTree = "<group>"; };
 		43FD3EAB225B39300028F25A /* LoginInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoData.swift; sourceTree = "<group>"; };
 		43FD3EAD225B5F950028F25A /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		43FD3EAF225B88EE0028F25A /* MemberPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberPriceTableViewCell.swift; sourceTree = "<group>"; };
+		43FD3EB0225B88EE0028F25A /* MemberPriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberPriceTableViewCell.xib; sourceTree = "<group>"; };
 		43FE888322599D7700BC2419 /* EightPriceHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightPriceHotelViewController.swift; sourceTree = "<group>"; };
 		43FE88852259D86400BC2419 /* AccountsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsData.swift; sourceTree = "<group>"; };
 		43FE88882259DB9600BC2419 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 				43546EE32253A74D005A0AB7 /* LimitedDatePriceTableViewCell.xib */,
 				43FB1BDA2258A9280004EB7B /* TripReservationTableViewCell.swift */,
 				43FB1BDB2258A9280004EB7B /* TripReservationTableViewCell.xib */,
+				43FD3EAF225B88EE0028F25A /* MemberPriceTableViewCell.swift */,
+				43FD3EB0225B88EE0028F25A /* MemberPriceTableViewCell.xib */,
 			);
 			path = TRCustomCell;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 				43546E9A2251C08A005A0AB7 /* LaunchScreen.storyboard in Resources */,
 				43FE888F2259E05C00BC2419 /* WithRightArrowTableViewCell.xib in Resources */,
 				43FB1BDD2258A9280004EB7B /* TripReservationTableViewCell.xib in Resources */,
+				43FD3EB2225B88EE0028F25A /* MemberPriceTableViewCell.xib in Resources */,
 				43546EE52253A74D005A0AB7 /* LimitedDatePriceTableViewCell.xib in Resources */,
 				43546E972251C08A005A0AB7 /* Assets.xcassets in Resources */,
 				43546EDD22537D3D005A0AB7 /* TodayPriceTableViewCell.xib in Resources */,
@@ -591,6 +598,7 @@
 				43546ED022530262005A0AB7 /* BeforeLoginTableViewCell.swift in Sources */,
 				43FB1BD92258A8430004EB7B /* TripReservationCellData.swift in Sources */,
 				43546EEB2254E2DF005A0AB7 /* LoginOrRegisterViewController.swift in Sources */,
+				43FD3EB1225B88EE0028F25A /* MemberPriceTableViewCell.swift in Sources */,
 				43546EF32255A71A005A0AB7 /* AccountsViewController.swift in Sources */,
 				43FD3EAC225B39300028F25A /* LoginInfoData.swift in Sources */,
 				43FB1BD422583E650004EB7B /* SetLocationViewController.swift in Sources */,
