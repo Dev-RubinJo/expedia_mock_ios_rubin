@@ -16,6 +16,7 @@ class AccountsViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var editAccountInfo: UIButton!
     
     
     func updateUI(isLogin: Bool) {
@@ -23,11 +24,13 @@ class AccountsViewController: UIViewController {
             self.loginButton.isHidden = false
             self.loginButton.layer.cornerRadius = 10.0
             self.logoutButton.isHidden = true
+            self.editAccountInfo.isHidden = true
         } else if isLogin == true {
             self.loginButton.isHidden = true
             self.logoutButton.isHidden = false
             self.logoutButton.layer.cornerRadius = 10.0
             self.logoutButton.addTarget(self, action: #selector(pressLogoutButton), for: .touchUpInside)
+            self.editAccountInfo.isHidden = false
         }
     }
     
@@ -42,7 +45,6 @@ class AccountsViewController: UIViewController {
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        print("a")
         updateUI(isLogin: self.data.loadLogin())
     }
 

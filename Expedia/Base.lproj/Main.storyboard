@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OQ-K2-AbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381" y="7"/>
+            <point key="canvasLocation" x="380" y="-62"/>
         </scene>
         <!--계정-->
         <scene sceneID="Xzr-IO-mIW">
@@ -215,7 +215,7 @@
                                             <constraint firstItem="Vs8-eD-W4u" firstAttribute="top" secondItem="O3H-kU-IPz" secondAttribute="top" constant="10" id="pZ0-eh-jjY"/>
                                         </constraints>
                                     </view>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuR-Lt-lEg">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuR-Lt-lEg">
                                         <rect key="frame" x="0.0" y="166" width="414" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -437,13 +437,14 @@
                     <tabBarItem key="tabBarItem" title="계정" image="profile_icL" landscapeImage="profile_icC" id="k6K-Ro-AbI"/>
                     <size key="freeformSize" width="414" height="1140"/>
                     <connections>
+                        <outlet property="editAccountInfo" destination="GuR-Lt-lEg" id="zxR-za-aCB"/>
                         <outlet property="loginButton" destination="PL1-Bt-zOL" id="BXD-ZM-kzS"/>
                         <outlet property="logoutButton" destination="7WK-md-Rp5" id="Iq5-XA-mcv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OW1-Ey-DrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="1756"/>
+            <point key="canvasLocation" x="380" y="1700"/>
         </scene>
         <!--여행 예약-->
         <scene sceneID="vOU-Ob-8vj">

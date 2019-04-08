@@ -10,14 +10,11 @@ import UIKit
 import XLPagerTabStrip
 import TextFieldEffects
 import Alamofire
+import SwiftyJSON
 
 class RegisterViewController: UIViewController, IndicatorInfoProvider {
     
     var data = LoginInfoData()
-    var lastName: String?
-    var firstName: String?
-    var email: String?
-    var password: String?
     
     let lastNameTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 80, width: ((UIScreen.main.bounds.width - 20) / 2) - 10, height: 45))
     let firstNameTextField = HoshiTextField(frame: CGRect(x: ((UIScreen.main.bounds.width - 20) / 2) + 15, y: 80, width: ((UIScreen.main.bounds.width - 20) / 2) - 10, height: 45))
@@ -56,6 +53,7 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider {
         
         
         registerButton.layer.cornerRadius = 10.0
+        registerButton.addTarget(self, action: #selector(register), for: .touchUpInside)
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
@@ -63,7 +61,25 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider {
     }
     
     @objc func register() {
+        let lastName = lastNameTextField.text!
+        let firstName = firstNameTextField.text!
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        let headers = ["Content-Type": "application/json"]
+        let body = ["Email": "\(email)", "Pw": "\(password)", "Name": "\(lastName)\(firstName)"]
+        let registerAPIURL = URL(string: "http://www.kaca5.com/expedia/user")
         
+        Alamofire.request(registerAPIURL!, method: .post, parameters: body, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { response in
+            switch response.result {
+            case .success(let data):
+                let test = JSON(data)
+                print(test)
+                print(body)
+            case .failure(let error):
+                print(error)
+            }
+        }
+//        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
