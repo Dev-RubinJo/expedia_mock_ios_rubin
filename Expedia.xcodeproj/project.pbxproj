@@ -36,6 +36,7 @@
 		43FB1BD92258A8430004EB7B /* TripReservationCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BD82258A8430004EB7B /* TripReservationCellData.swift */; };
 		43FB1BDC2258A9280004EB7B /* TripReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BDA2258A9280004EB7B /* TripReservationTableViewCell.swift */; };
 		43FB1BDD2258A9280004EB7B /* TripReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FB1BDB2258A9280004EB7B /* TripReservationTableViewCell.xib */; };
+		43FD3EAA225AEDBA0028F25A /* AccountsViewControllerBackUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EA9225AEDBA0028F25A /* AccountsViewControllerBackUp.swift */; };
 		43FE888422599D7700BC2419 /* EightPriceHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE888322599D7700BC2419 /* EightPriceHotelViewController.swift */; };
 		43FE88862259D86400BC2419 /* AccountsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE88852259D86400BC2419 /* AccountsData.swift */; };
 		43FE888A2259DB9600BC2419 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE88882259DB9600BC2419 /* CurrencyTableViewCell.swift */; };
@@ -103,6 +104,7 @@
 		43FB1BD82258A8430004EB7B /* TripReservationCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TripReservationCellData.swift; path = ReservateHotel/TripReservationCellData.swift; sourceTree = "<group>"; };
 		43FB1BDA2258A9280004EB7B /* TripReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripReservationTableViewCell.swift; sourceTree = "<group>"; };
 		43FB1BDB2258A9280004EB7B /* TripReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripReservationTableViewCell.xib; sourceTree = "<group>"; };
+		43FD3EA9225AEDBA0028F25A /* AccountsViewControllerBackUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewControllerBackUp.swift; sourceTree = "<group>"; };
 		43FE888322599D7700BC2419 /* EightPriceHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightPriceHotelViewController.swift; sourceTree = "<group>"; };
 		43FE88852259D86400BC2419 /* AccountsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsData.swift; sourceTree = "<group>"; };
 		43FE88882259DB9600BC2419 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			children = (
 				43546EF22255A71A005A0AB7 /* AccountsViewController.swift */,
 				43FE88852259D86400BC2419 /* AccountsData.swift */,
+				43FD3EA9225AEDBA0028F25A /* AccountsViewControllerBackUp.swift */,
 				43FE88872259DB5F00BC2419 /* AccountsCell */,
 			);
 			path = Accounts;
@@ -576,6 +579,7 @@
 				43FE888A2259DB9600BC2419 /* CurrencyTableViewCell.swift in Sources */,
 				43FE88862259D86400BC2419 /* AccountsData.swift in Sources */,
 				43546EE42253A74D005A0AB7 /* LimitedDatePriceTableViewCell.swift in Sources */,
+				43FD3EAA225AEDBA0028F25A /* AccountsViewControllerBackUp.swift in Sources */,
 				43FB1BD6225874B90004EB7B /* Extension.swift in Sources */,
 				43546ED022530262005A0AB7 /* BeforeLoginTableViewCell.swift in Sources */,
 				43FB1BD92258A8430004EB7B /* TripReservationCellData.swift in Sources */,
