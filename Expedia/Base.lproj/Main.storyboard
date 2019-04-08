@@ -735,14 +735,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3nP-zZ-yed">
-                                <rect key="frame" x="34" y="743" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sV-Gv-WPG">
+                                <rect key="frame" x="10" y="807" width="394" height="50"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.35294117650000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5uZ-li-mCW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입함으로써 본인은 익스피디아 리워드 이용약관에 동의하며, 이용약관과 개인정보 보호정책을 읽었고 이에 동의합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfL-LY-OEA">
+                                <rect key="frame" x="10" y="766" width="394" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEP-DD-SZR" customClass="ToggleButton" customModule="Expedia" customModuleProvider="target">
+                                <rect key="frame" x="20" y="726" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0vL-Ws-uei"/>
+                                    <constraint firstAttribute="width" constant="20" id="2yY-Zz-ZrO"/>
+                                </constraints>
+                                <state key="normal" title="✓">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행 날짜, 특가 상품 및 기타 정보가 들어있는 익스피디아 이메일을 받겠습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZa-IZ-qIi">
+                                <rect key="frame" x="65" y="725" width="339" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gfL-LY-OEA" firstAttribute="top" secondItem="JEP-DD-SZR" secondAttribute="bottom" constant="20" id="FlJ-R1-gFm"/>
+                            <constraint firstItem="GZa-IZ-qIi" firstAttribute="leading" secondItem="JEP-DD-SZR" secondAttribute="trailing" constant="25" id="Rj3-Ch-bC4"/>
+                            <constraint firstItem="1Mm-H0-F3n" firstAttribute="trailing" secondItem="3sV-Gv-WPG" secondAttribute="trailing" constant="10" id="SFv-5w-mf8"/>
+                            <constraint firstItem="1Mm-H0-F3n" firstAttribute="trailing" secondItem="gfL-LY-OEA" secondAttribute="trailing" constant="10" id="cSR-Kx-LGM"/>
+                            <constraint firstItem="gfL-LY-OEA" firstAttribute="leading" secondItem="1Mm-H0-F3n" secondAttribute="leading" constant="10" id="djb-l6-6r2"/>
+                            <constraint firstItem="3sV-Gv-WPG" firstAttribute="top" secondItem="gfL-LY-OEA" secondAttribute="bottom" constant="5" id="doN-j2-euK"/>
+                            <constraint firstItem="gfL-LY-OEA" firstAttribute="top" secondItem="GZa-IZ-qIi" secondAttribute="bottom" constant="5" id="grr-l1-TcN"/>
+                            <constraint firstItem="JEP-DD-SZR" firstAttribute="leading" secondItem="1Mm-H0-F3n" secondAttribute="leading" constant="20" id="iPM-Ip-C15"/>
+                            <constraint firstItem="3sV-Gv-WPG" firstAttribute="bottom" secondItem="1Mm-H0-F3n" secondAttribute="bottom" constant="-5" id="mIw-B6-NzR"/>
+                            <constraint firstItem="1Mm-H0-F3n" firstAttribute="trailing" secondItem="GZa-IZ-qIi" secondAttribute="trailing" constant="10" id="mt8-MR-5l4"/>
+                            <constraint firstItem="3sV-Gv-WPG" firstAttribute="leading" secondItem="1Mm-H0-F3n" secondAttribute="leading" constant="10" id="ngn-R6-gSY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1Mm-H0-F3n"/>
                     </view>
+                    <connections>
+                        <outlet property="registerButton" destination="3sV-Gv-WPG" id="XwP-w4-PES"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oc-u2-z3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
