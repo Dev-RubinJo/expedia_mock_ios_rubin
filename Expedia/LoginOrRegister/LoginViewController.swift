@@ -10,12 +10,14 @@ import UIKit
 import XLPagerTabStrip
 import TextFieldEffects
 import Alamofire
+import SwiftyJSON
 
 
 class LoginViewController: UIViewController, IndicatorInfoProvider {
     
     let color = UIColor()
     let data = LoginInfoData()
+    var token: String?
     
     let emailTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 145.0, width: UIScreen.main.bounds.width - 20, height: 45.0))
     let passwordTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 210.0, width: UIScreen.main.bounds.width - 20, height: 45))
@@ -52,7 +54,7 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         loginButton.layer.cornerRadius = 10
         loginButton.layer.masksToBounds = true
         
-//        loginButton.addTarget(self, action: #selector(loginButtonTest), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(pressLoginButton), for: .touchUpInside)
 
         
         self.view.addSubview(emailTextField)
@@ -60,6 +62,31 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         self.view.addSubview(forgetPassword)
         self.view.addSubview(loginButton)
     }
+    
+    @objc func pressLoginButton() {
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        let headers = ["Content-Type": "application/json"]
+        let body = ["Email": "\(email)", "Pw": "\(password)"]
+        let loginAPIURL = URL(string: "http://www.kaca5.com/expedia/login")
+        
+        Alamofire.request(loginAPIURL!, method: .post, parameters: body, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { response in
+            switch response.result {
+            case .success(let data):
+                let test = JSON(data)
+                self.token = test["token"]["jwt"].stringValue
+                self.data.loginStatus()
+                self.data.save(self.token!)
+                self.data.saveLogin()
+                print(self.data.loadLogin())
+                print(self.data.load())
+            case .failure(let error):
+                print(error)
+            }
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
 //    @objc func loginButtonTest() {
 //        dismiss(animated: true, completion: nil)
 //    }
@@ -78,3 +105,19 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
     }
     
 }
+/*
+ let request = Alamofire.request(movieAPI, method: .get, parameters: [:], encoding: URLEncoding.default, headers: headers).validate().responseJSON { response in
+ switch response.result {
+ case .success(let movieJSON):
+ self.json = JSON(movieJSON)
+ print(self.json!)
+ case .failure(let error):
+ print(error)
+ }
+ let storyboard = self.storyboard!
+ let movieTableVC = storyboard.instantiateViewController(withIdentifier: "movieInfoVC") as! MovieInfoViewController
+ movieTableVC.movieInfoJson = self.json!
+ self.navigationController?.pushViewController(movieTableVC, animated: true)
+ }
+ }
+ */
