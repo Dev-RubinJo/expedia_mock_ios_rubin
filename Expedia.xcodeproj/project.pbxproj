@@ -41,6 +41,8 @@
 		43FD3EAE225B5F950028F25A /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EAD225B5F950028F25A /* ToggleButton.swift */; };
 		43FD3EB1225B88EE0028F25A /* MemberPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EAF225B88EE0028F25A /* MemberPriceTableViewCell.swift */; };
 		43FD3EB2225B88EE0028F25A /* MemberPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FD3EB0225B88EE0028F25A /* MemberPriceTableViewCell.xib */; };
+		43FD3EB5225BA16F0028F25A /* HotelListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD3EB3225BA16F0028F25A /* HotelListTableViewCell.swift */; };
+		43FD3EB6225BA16F0028F25A /* HotelListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FD3EB4225BA16F0028F25A /* HotelListTableViewCell.xib */; };
 		43FE888422599D7700BC2419 /* EightPriceHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE888322599D7700BC2419 /* EightPriceHotelViewController.swift */; };
 		43FE88862259D86400BC2419 /* AccountsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE88852259D86400BC2419 /* AccountsData.swift */; };
 		43FE888A2259DB9600BC2419 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE88882259DB9600BC2419 /* CurrencyTableViewCell.swift */; };
@@ -113,6 +115,8 @@
 		43FD3EAD225B5F950028F25A /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		43FD3EAF225B88EE0028F25A /* MemberPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberPriceTableViewCell.swift; sourceTree = "<group>"; };
 		43FD3EB0225B88EE0028F25A /* MemberPriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberPriceTableViewCell.xib; sourceTree = "<group>"; };
+		43FD3EB3225BA16F0028F25A /* HotelListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListTableViewCell.swift; sourceTree = "<group>"; };
+		43FD3EB4225BA16F0028F25A /* HotelListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelListTableViewCell.xib; sourceTree = "<group>"; };
 		43FE888322599D7700BC2419 /* EightPriceHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightPriceHotelViewController.swift; sourceTree = "<group>"; };
 		43FE88852259D86400BC2419 /* AccountsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsData.swift; sourceTree = "<group>"; };
 		43FE88882259DB9600BC2419 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 				43FE888222599D4900BC2419 /* EightPriceHotelList */,
 				43FE888122599D2500BC2419 /* ReservateHotel */,
 				43546ECD225301EE005A0AB7 /* TRCustomCell */,
+				43FD3EB3225BA16F0028F25A /* HotelListTableViewCell.swift */,
+				43FD3EB4225BA16F0028F25A /* HotelListTableViewCell.xib */,
 			);
 			path = TripReservartion;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 				43546EE122538670005A0AB7 /* DayDayPriceTableViewCell.xib in Resources */,
 				43FE88932259E6D900BC2419 /* DefaultTableViewCell.xib in Resources */,
 				43546ED522533136005A0AB7 /* EightPriceHotelTableViewCell.xib in Resources */,
+				43FD3EB6225BA16F0028F25A /* HotelListTableViewCell.xib in Resources */,
 				43546E952251C087005A0AB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +607,7 @@
 				43546EEB2254E2DF005A0AB7 /* LoginOrRegisterViewController.swift in Sources */,
 				43FD3EB1225B88EE0028F25A /* MemberPriceTableViewCell.swift in Sources */,
 				43546EF32255A71A005A0AB7 /* AccountsViewController.swift in Sources */,
+				43FD3EB5225BA16F0028F25A /* HotelListTableViewCell.swift in Sources */,
 				43FD3EAC225B39300028F25A /* LoginInfoData.swift in Sources */,
 				43FB1BD422583E650004EB7B /* SetLocationViewController.swift in Sources */,
 				43546E902251C087005A0AB7 /* AppDelegate.swift in Sources */,
