@@ -12,7 +12,7 @@ import SnapKit
 class AccountsViewController: UIViewController {
     
     var data = LoginInfoData()
-    var isLogin = false
+    
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
@@ -20,16 +20,30 @@ class AccountsViewController: UIViewController {
     
     func updateUI(isLogin: Bool) {
         if isLogin == false {
+            self.loginButton.isHidden = false
             self.loginButton.layer.cornerRadius = 10.0
-            self.logoutButton.isHidden = true
+            self.logoutButton.isHidden = true        
         } else if isLogin == true {
             self.loginButton.isHidden = true
+            self.logoutButton.isHidden = false
             self.logoutButton.layer.cornerRadius = 10.0
+            self.logoutButton.addTarget(self, action: #selector(pressLogoutButton), for: .touchUpInside)
         }
     }
+    
+    @objc func pressLogoutButton() {
+        self.data.logoutStatus()
+        self.data.saveLogin()
+        updateUI(isLogin: self.data.loadLogin())
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI(isLogin: self.isLogin)
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        print("a")
+        updateUI(isLogin: self.data.loadLogin())
     }
 
 }
