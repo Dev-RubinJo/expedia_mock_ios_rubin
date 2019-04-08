@@ -13,11 +13,18 @@ import Alamofire
 
 class RegisterViewController: UIViewController, IndicatorInfoProvider {
     
-    let lastNameTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 145.0, width: ((UIScreen.main.bounds.width - 20) / 2) - 10, height: 45))
-    let firstNameTextField = HoshiTextField(frame: CGRect(x: ((UIScreen.main.bounds.width - 20) / 2) + 15, y: 145.0, width: ((UIScreen.main.bounds.width - 20) / 2) - 10, height: 45))
-    let emailTextField = HoshiTextField(frame: CGRect(x: 10, y: 200, width: UIScreen.main.bounds.width - 20, height: 45))
-    let passwordTextField = HoshiTextField(frame: CGRect(x: 10, y: 255, width: UIScreen.main.bounds.width - 20, height: 45))
+    var data = LoginInfoData()
+    var lastName: String?
+    var firstName: String?
+    var email: String?
+    var password: String?
     
+    let lastNameTextField = HoshiTextField(frame: CGRect(x: 10.0, y: 80, width: ((UIScreen.main.bounds.width - 20) / 2) - 10, height: 45))
+    let firstNameTextField = HoshiTextField(frame: CGRect(x: ((UIScreen.main.bounds.width - 20) / 2) + 15, y: 80, width: ((UIScreen.main.bounds.width - 20) / 2) - 10, height: 45))
+    let emailTextField = HoshiTextField(frame: CGRect(x: 10, y: 135, width: UIScreen.main.bounds.width - 20, height: 45))
+    let passwordTextField = HoshiTextField(frame: CGRect(x: 10, y: 190, width: UIScreen.main.bounds.width - 20, height: 45))
+    
+    @IBOutlet weak var registerButton: UIButton!
     
 
     func updateUI() {
@@ -48,11 +55,15 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider {
         passwordTextField.isSecureTextEntry = true
         
         
-        
+        registerButton.layer.cornerRadius = 10.0
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "회원 가입")
+    }
+    
+    @objc func register() {
+        
     }
     
     override func viewDidLoad() {
