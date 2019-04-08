@@ -593,13 +593,36 @@
                     <view key="view" contentMode="scaleToFill" id="ylP-GM-E81">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSN-15-aUd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="N0g-zU-vGA"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Title" id="lkf-jB-q9v">
+                                        <barButtonItem key="leftBarButtonItem" title="X" id="uKK-6L-4UY">
+                                            <connections>
+                                                <action selector="closeButton:" destination="l7M-NS-bp6" id="Zgq-Gp-jll"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QSN-15-aUd" firstAttribute="trailing" secondItem="1pC-aB-eqq" secondAttribute="trailing" id="iaD-zk-jdN"/>
+                            <constraint firstItem="QSN-15-aUd" firstAttribute="leading" secondItem="1pC-aB-eqq" secondAttribute="leading" id="nmW-KL-99B"/>
+                            <constraint firstItem="QSN-15-aUd" firstAttribute="top" secondItem="1pC-aB-eqq" secondAttribute="top" id="rjm-ib-lRs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1pC-aB-eqq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yu7-nB-cLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2141" y="-1151"/>
+            <point key="canvasLocation" x="2141" y="-1197"/>
         </scene>
         <!--Set Location View Controller-->
         <scene sceneID="eSy-cZ-Xaf">

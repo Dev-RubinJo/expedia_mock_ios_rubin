@@ -54,6 +54,9 @@ class TripReservationViewController: UIViewController {
     @objc func presentLoginOrRegisterVC() {
         performSegue(withIdentifier: "showLoginOrRegisterVC1", sender: nil)
     }
+    @objc func presentEightPriceVC() {
+        performSegue(withIdentifier: "showEightPriceHotel", sender: nil)
+    }
 
 
 }
@@ -65,7 +68,6 @@ extension TripReservationViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if self.data.loadLogin() == false {
-            print("false")
             if indexPath.row == 0 {
                 guard let beforeLoginCell = menuListTable.dequeueReusableCell(withIdentifier: "beforeLoginTVC", for: indexPath) as? BeforeLoginTableViewCell else { return UITableViewCell() }
                 beforeLoginCell.updateUI()
@@ -77,6 +79,7 @@ extension TripReservationViewController: UITableViewDelegate, UITableViewDataSou
             } else if indexPath.row == 2 {
                 guard let eightPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "eightPriceTVC", for: indexPath) as? EightPriceHotelTableViewCell else { return UITableViewCell() }
                 eightPriceCell.updateUI()
+                eightPriceCell.imageButton.addTarget(self, action: #selector(presentEightPriceVC), for: .touchUpInside)
                 return eightPriceCell
             } else if indexPath.row == 3 {
                 guard let daydayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "daydayPriceTVC", for: indexPath) as? DayDayPriceTableViewCell else { return UITableViewCell() }
@@ -88,13 +91,13 @@ extension TripReservationViewController: UITableViewDelegate, UITableViewDataSou
                 return limitedPriceCell
             }
         } else if self.data.loadLogin() {
-            print("true")
             if indexPath.row == 0 {
                 guard let todayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "todayPriceTVC", for: indexPath) as? TodayPriceTableViewCell else { return UITableViewCell() }
                 return todayPriceCell
             } else if indexPath.row == 1 {
                 guard let eightPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "eightPriceTVC", for: indexPath) as? EightPriceHotelTableViewCell else { return UITableViewCell() }
                 eightPriceCell.updateUI()
+                eightPriceCell.imageButton.addTarget(self, action: #selector(presentEightPriceVC), for: .touchUpInside)
                 return eightPriceCell
             } else if indexPath.row == 2 {
                 guard let daydayPriceCell = menuListTable.dequeueReusableCell(withIdentifier: "daydayPriceTVC", for: indexPath) as? DayDayPriceTableViewCell else { return UITableViewCell() }
