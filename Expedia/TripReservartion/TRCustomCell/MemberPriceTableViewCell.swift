@@ -10,15 +10,12 @@ import UIKit
 
 class MemberPriceTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var MemberPriceButton: UIButton!
+    @IBOutlet weak var MemberPriceIcon: UIImageView!
     
+    func updateUI() {
+        MemberPriceButton.layer.cornerRadius = 10
+        MemberPriceButton.layer.masksToBounds = true
+        MemberPriceIcon.layer.cornerRadius = MemberPriceIcon.frame.width / 2
+    }
 }
