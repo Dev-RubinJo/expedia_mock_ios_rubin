@@ -18,6 +18,7 @@ class LoginInfoData: Codable {
     }
     func logoutStatus() {
         self.isLogin = false
+        UserDefaults.standard.removeObject(forKey: "token")
     }
     
     func save(_ token: String) {

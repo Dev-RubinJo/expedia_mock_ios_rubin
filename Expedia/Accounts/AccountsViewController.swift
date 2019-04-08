@@ -22,7 +22,7 @@ class AccountsViewController: UIViewController {
         if isLogin == false {
             self.loginButton.isHidden = false
             self.loginButton.layer.cornerRadius = 10.0
-            self.logoutButton.isHidden = true        
+            self.logoutButton.isHidden = true
         } else if isLogin == true {
             self.loginButton.isHidden = true
             self.logoutButton.isHidden = false
