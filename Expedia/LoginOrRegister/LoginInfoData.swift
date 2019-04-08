@@ -7,12 +7,31 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 class LoginInfoData: Codable {
-    var email: String?
-    var pw: String?
-    var name: String?
     
     var jwt: String?
+    var isLogin: Bool = false
+    
+    func loginStatus() {
+        self.isLogin = true
+    }
+    func logoutStatus() {
+        self.isLogin = false
+    }
+    
+    func save(_ token: String) {
+        UserDefaults.standard.set(token, forKey: "token")
+    }
+    func load() -> String {
+        let data = UserDefaults.standard.string(forKey: "token")!
+        return data
+    }
+    func saveLogin() {
+        UserDefaults.standard.set(isLogin, forKey: "isLogin")
+    }
+    func loadLogin() -> Bool {
+        let data = UserDefaults.standard.bool(forKey: "isLogin")
+        return data
+    }
 }
