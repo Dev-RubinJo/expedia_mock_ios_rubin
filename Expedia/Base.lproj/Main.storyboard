@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OQ-K2-AbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="-62"/>
+            <point key="canvasLocation" x="381" y="7"/>
         </scene>
         <!--계정-->
         <scene sceneID="Xzr-IO-mIW">
@@ -583,7 +583,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rv-hu-OUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2142" y="-1904"/>
+            <point key="canvasLocation" x="2000" y="-2552"/>
         </scene>
         <!--Eight Price Hotel View Controller-->
         <scene sceneID="StN-GG-nJp">
@@ -600,7 +600,7 @@
                                 </constraints>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <navigationItem title="Title" id="lkf-jB-q9v">
+                                    <navigationItem title="₩80,000 이하 특가 호텔" id="lkf-jB-q9v">
                                         <barButtonItem key="leftBarButtonItem" title="X" id="uKK-6L-4UY">
                                             <connections>
                                                 <action selector="closeButton:" destination="l7M-NS-bp6" id="Zgq-Gp-jll"/>
@@ -609,9 +609,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JXm-P3-dXc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JXm-P3-dXc">
                                 <rect key="frame" x="0.0" y="89" width="414" height="773"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.93725490199999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -632,7 +633,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yu7-nB-cLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2141" y="-1197"/>
+            <point key="canvasLocation" x="1506" y="-1872"/>
         </scene>
         <!--Set Location View Controller-->
         <scene sceneID="eSy-cZ-Xaf">
@@ -681,7 +682,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCp-5l-Yhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2885.507246376812" y="-2552.0089285714284"/>
+            <point key="canvasLocation" x="2897" y="-3346"/>
         </scene>
         <!--Login Or Register View Controller-->
         <scene sceneID="nlz-DN-o81">
@@ -880,7 +881,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxD-cI-Rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="-1469"/>
+            <point key="canvasLocation" x="1088" y="-2552"/>
         </scene>
     </scenes>
     <resources>
