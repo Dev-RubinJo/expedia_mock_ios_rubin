@@ -7,17 +7,41 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 
 class EightPriceHotelViewController: UIViewController {
+    
+    var hotelData: JSON?
 
+    @IBOutlet weak var hotelListTable: UITableView!
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hotelListTable.delegate = self
+        self.hotelListTable.dataSource = self
+        
+        print(hotelData!.count)
+        
+        let eightPriceHotelNibName = UINib(nibName: "HotelListTableViewCell", bundle: nil)
+        hotelListTable.register(eightPriceHotelNibName, forCellReuseIdentifier: "specialPriceHotelCell")
 
         // Do any additional setup after loading the view.
     }
 
+}
+extension EightPriceHotelViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return hotelData!.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let hotelList = tableView.dequeueReusableCell(withIdentifier: "specialPriceHotelCell", for: indexPath) as? HotelListTableViewCell else { return UITableViewCell() }
+        hotelList.updateUI(hotelData!, indexPath.row)
+        return hotelList
+    }
 }
