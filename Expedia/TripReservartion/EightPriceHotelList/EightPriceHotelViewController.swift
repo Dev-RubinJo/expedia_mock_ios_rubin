@@ -13,6 +13,7 @@ import SwiftyJSON
 class EightPriceHotelViewController: UIViewController {
     
     var hotelData: JSON?
+    let color = UIColor()
 
     @IBOutlet weak var hotelListTable: UITableView!
     @IBAction func closeButton(_ sender: Any) {
@@ -24,8 +25,8 @@ class EightPriceHotelViewController: UIViewController {
         super.viewDidLoad()
         self.hotelListTable.delegate = self
         self.hotelListTable.dataSource = self
-        
-        print(hotelData!.count)
+        self.hotelListTable.backgroundColor = color.UIColorFromRGB(rgbValue: 0xF1EFF6)
+        self.hotelListTable.separatorColor = color.UIColorFromRGB(rgbValue: 0xF1EFF6)
         
         let eightPriceHotelNibName = UINib(nibName: "HotelListTableViewCell", bundle: nil)
         hotelListTable.register(eightPriceHotelNibName, forCellReuseIdentifier: "specialPriceHotelCell")
@@ -42,6 +43,8 @@ extension EightPriceHotelViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let hotelList = tableView.dequeueReusableCell(withIdentifier: "specialPriceHotelCell", for: indexPath) as? HotelListTableViewCell else { return UITableViewCell() }
         hotelList.updateUI(hotelData!, indexPath.row)
+        hotelList.layer.cornerRadius = 5
+        hotelList.layer.masksToBounds = true
         return hotelList
     }
 }
