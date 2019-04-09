@@ -512,7 +512,6 @@
                         <outlet property="reservateHotelButton" destination="amP-mP-JDn" id="Jlh-d0-jRj"/>
                         <outlet property="topLogoView" destination="R34-uV-reZ" id="sHL-cm-4KN"/>
                         <segue destination="GMV-y8-MJt" kind="presentation" identifier="showLoginOrRegisterVC1" id="cpT-KW-4ae"/>
-                        <segue destination="l7M-NS-bp6" kind="presentation" identifier="showEightPriceHotel" id="99X-lV-la2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3z-8e-Hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -589,7 +588,7 @@
         <!--Eight Price Hotel View Controller-->
         <scene sceneID="StN-GG-nJp">
             <objects>
-                <viewController id="l7M-NS-bp6" customClass="EightPriceHotelViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="eightPriceVC" id="l7M-NS-bp6" customClass="EightPriceHotelViewController" customModule="Expedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ylP-GM-E81">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -610,15 +609,26 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JXm-P3-dXc">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="1pC-aB-eqq" firstAttribute="bottom" secondItem="JXm-P3-dXc" secondAttribute="bottom" id="4WQ-A5-EJx"/>
+                            <constraint firstItem="JXm-P3-dXc" firstAttribute="top" secondItem="QSN-15-aUd" secondAttribute="bottom" id="ErC-Ok-H3K"/>
+                            <constraint firstItem="1pC-aB-eqq" firstAttribute="trailing" secondItem="JXm-P3-dXc" secondAttribute="trailing" id="bBh-5e-6vW"/>
                             <constraint firstItem="QSN-15-aUd" firstAttribute="trailing" secondItem="1pC-aB-eqq" secondAttribute="trailing" id="iaD-zk-jdN"/>
+                            <constraint firstItem="JXm-P3-dXc" firstAttribute="leading" secondItem="1pC-aB-eqq" secondAttribute="leading" id="jow-1v-OHd"/>
                             <constraint firstItem="QSN-15-aUd" firstAttribute="leading" secondItem="1pC-aB-eqq" secondAttribute="leading" id="nmW-KL-99B"/>
                             <constraint firstItem="QSN-15-aUd" firstAttribute="top" secondItem="1pC-aB-eqq" secondAttribute="top" id="rjm-ib-lRs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1pC-aB-eqq"/>
                     </view>
+                    <connections>
+                        <outlet property="hotelListTable" destination="JXm-P3-dXc" id="Zeg-hk-NDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yu7-nB-cLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -889,6 +899,6 @@
         <image name="topLogoImg" width="640" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DeJ-gS-C7U"/>
+        <segue reference="cpT-KW-4ae"/>
     </inferredMetricsTieBreakers>
 </document>
