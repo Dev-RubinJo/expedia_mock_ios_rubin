@@ -12,7 +12,7 @@ import TextFieldEffects
 import Alamofire
 import SwiftyJSON
 
-class RegisterViewController: UIViewController, IndicatorInfoProvider {
+class RegisterViewController: UIViewController, IndicatorInfoProvider, UITextFieldDelegate {
     
     var data = LoginInfoData()
     
@@ -56,10 +56,26 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider {
         registerButton.addTarget(self, action: #selector(register), for: .touchUpInside)
     }
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.isEqual(self.lastNameTextField)) {
+            self.firstNameTextField.becomeFirstResponder()
+        } else if (textField.isEqual(self.firstNameTextField)) {
+            self.emailTextField.becomeFirstResponder()
+        } else if (textField.isEqual(self.emailTextField)) {
+            self.passwordTextField.becomeFirstResponder()
+        }
+        return true
+    }
+    func endEdit() {
+        self.passwordTextField.resignFirstResponder()
+    }
+    
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "회원 가입")
     }
     
+
     @objc func register() {
         let lastName = lastNameTextField.text!
         let firstName = firstNameTextField.text!
@@ -81,14 +97,19 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider {
         }
 //        dismiss(animated: true, completion: nil)
     }
+//      화면을 터치했을 때 키보드가 내려가는 것 구현
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.lastNameTextField.delegate = self
+        self.firstNameTextField.delegate = self
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
         updateUI()
 
         // Do any additional setup after loading the view.
     }
-    
-
-
 }
