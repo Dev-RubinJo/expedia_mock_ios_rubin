@@ -7,18 +7,28 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class HotelListTableViewCell: UITableViewCell {
+    
+    var imageURL: URL?
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var hotelImg: UIImageView!
+    @IBOutlet weak var percentLabel: UILabel!
+    @IBOutlet weak var hotelNameLabel: UILabel!
+    @IBOutlet weak var hotelLocationLabel: UILabel!
+    @IBOutlet weak var hotelPriceLabel: UILabel!
+    
+    func updateUI(_ info: JSON, _ indexPath: Int) {
+        let percentText = info[indexPath]["Percentage"].intValue
+        let hotelNameText = info[indexPath]["Name"].stringValue
+        let hotelLocationText = info[indexPath]["ShortL"].stringValue
+        let hotelPriceText = info[indexPath]["Priced"].stringValue
+        
+        self.percentLabel.text = "\(percentText)%"
+        self.hotelNameLabel.text = hotelNameText
+        self.hotelLocationLabel.text = hotelLocationText
+        self.hotelPriceLabel.text = hotelPriceText
     }
     
 }
