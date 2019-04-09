@@ -12,6 +12,7 @@ import SwiftyJSON
 class HotelListTableViewCell: UITableViewCell {
     
     var imageURL: URL?
+    let color = UIColor()
 
     @IBOutlet weak var hotelImg: UIImageView!
     @IBOutlet weak var percentLabel: UILabel!
@@ -20,6 +21,9 @@ class HotelListTableViewCell: UITableViewCell {
     @IBOutlet weak var hotelPriceLabel: UILabel!
     
     func updateUI(_ info: JSON, _ indexPath: Int) {
+        
+        self.backgroundColor = color.UIColorFromRGB(rgbValue: 0xF1EFF6)
+        
         let percentText = info[indexPath]["Percentage"].intValue
         let hotelNameText = info[indexPath]["Name"].stringValue
         let hotelLocationText = info[indexPath]["ShortL"].stringValue
