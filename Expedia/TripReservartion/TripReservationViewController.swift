@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class TripReservationViewController: UIViewController {
     
     let reservateHotelButtonColor: UIColor = UIColor()
     let data = LoginInfoData()
+    var jsonData: JSON?
     
 
     @IBOutlet weak var topLogoView: UIView!
@@ -55,7 +58,19 @@ class TripReservationViewController: UIViewController {
         performSegue(withIdentifier: "showLoginOrRegisterVC1", sender: nil)
     }
     @objc func presentEightPriceVC() {
-        performSegue(withIdentifier: "showEightPriceHotel", sender: nil)
+        Alamofire.request(URL(string: "http://www.kaca5.com/expedia/discounted_80000")!, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let data):
+                self.jsonData = JSON(data)
+            case .failure(let error):
+                print(error)
+            }
+            let storyboard = self.storyboard!
+            let eightPriceVC = storyboard.instantiateViewController(withIdentifier: "eightPriceVC") as! EightPriceHotelViewController
+            eightPriceVC.hotelData = self.jsonData!["result"]
+//            print(eightPriceVC.hotelData![0])
+            self.present(eightPriceVC, animated: true, completion: nil)
+        }
     }
 
 
