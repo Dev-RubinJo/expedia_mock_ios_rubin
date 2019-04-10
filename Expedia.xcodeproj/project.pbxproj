@@ -30,6 +30,7 @@
 		43546EEE2254E77D005A0AB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EED2254E77D005A0AB7 /* LoginViewController.swift */; };
 		43546EF02254E796005A0AB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EEF2254E796005A0AB7 /* RegisterViewController.swift */; };
 		43546EF32255A71A005A0AB7 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EF22255A71A005A0AB7 /* AccountsViewController.swift */; };
+		43AAB85C225E1BDE00186B55 /* SetPeopleNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAB85B225E1BDE00186B55 /* SetPeopleNumberViewController.swift */; };
 		43FB1BD22257266B0004EB7B /* ReserveHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BD12257266B0004EB7B /* ReserveHotelViewController.swift */; };
 		43FB1BD422583E650004EB7B /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BD322583E650004EB7B /* SetLocationViewController.swift */; };
 		43FB1BD6225874B90004EB7B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BD5225874B90004EB7B /* Extension.swift */; };
@@ -104,6 +105,7 @@
 		43546EED2254E77D005A0AB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43546EEF2254E796005A0AB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		43546EF22255A71A005A0AB7 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		43AAB85B225E1BDE00186B55 /* SetPeopleNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPeopleNumberViewController.swift; sourceTree = "<group>"; };
 		43FB1BD12257266B0004EB7B /* ReserveHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveHotelViewController.swift; sourceTree = "<group>"; };
 		43FB1BD322583E650004EB7B /* SetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationViewController.swift; sourceTree = "<group>"; };
 		43FB1BD5225874B90004EB7B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 			children = (
 				43FB1BD12257266B0004EB7B /* ReserveHotelViewController.swift */,
 				43FB1BD322583E650004EB7B /* SetLocationViewController.swift */,
+				43AAB85B225E1BDE00186B55 /* SetPeopleNumberViewController.swift */,
 			);
 			path = ReservateHotel;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				43FD3EB1225B88EE0028F25A /* MemberPriceTableViewCell.swift in Sources */,
 				43546EF32255A71A005A0AB7 /* AccountsViewController.swift in Sources */,
 				43FD3EB5225BA16F0028F25A /* HotelListTableViewCell.swift in Sources */,
+				43AAB85C225E1BDE00186B55 /* SetPeopleNumberViewController.swift in Sources */,
 				43FD3EAC225B39300028F25A /* LoginInfoData.swift in Sources */,
 				43FB1BD422583E650004EB7B /* SetLocationViewController.swift in Sources */,
 				43546E902251C087005A0AB7 /* AppDelegate.swift in Sources */,
