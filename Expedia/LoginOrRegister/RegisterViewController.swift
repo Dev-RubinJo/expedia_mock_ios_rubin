@@ -89,8 +89,14 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider, UITextFie
             switch response.result {
             case .success(let data):
                 let test = JSON(data)
-                print(test)
-                print(body)
+                if test["result"] != nil {  }
+                else if test["code"].intValue == 502 {
+                    let message = "중복된 이메일입니다."
+                    let alert = UIAlertController(title: "중복된 이메일", message: message, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                }
             case .failure(let error):
                 print(error)
             }

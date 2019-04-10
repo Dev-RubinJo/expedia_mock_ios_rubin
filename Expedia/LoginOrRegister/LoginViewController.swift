@@ -73,18 +73,30 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         Alamofire.request(loginAPIURL!, method: .post, parameters: body, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { response in
             switch response.result {
             case .success(let data):
-                let test = JSON(data)
-                self.token = test["token"]["jwt"].stringValue
-                self.data.loginStatus()
-                self.data.save(self.token!)
-                self.data.saveLogin()
-                print(self.data.loadLogin())
-                print(self.data.load())
+                let json = JSON(data)
+                if json["code"].intValue == 100 {
+                    self.token = json["token"]["jwt"].stringValue
+                    self.data.loginStatus()
+                    self.data.save(self.token!)
+                    self.data.saveLogin()
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    let message = "이메일 혹은 비밀번호가 잘못되었습니다."
+                    let alert = UIAlertController(title: "로그인 오류", message: message, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                }
             case .failure(let error):
                 print(error)
+                let message = "이메일 혹은 비밀번호가 잘못되었습니다."
+                let alert = UIAlertController(title: "로그인 오류", message: message, preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
             }
         }
-        dismiss(animated: true, completion: nil)
+        
     }
     
 //    @objc func loginButtonTest() {
