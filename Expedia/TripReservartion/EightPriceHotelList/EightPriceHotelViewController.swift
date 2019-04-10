@@ -43,8 +43,6 @@ extension EightPriceHotelViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let hotelList = tableView.dequeueReusableCell(withIdentifier: "specialPriceHotelCell", for: indexPath) as? HotelListTableViewCell else { return UITableViewCell() }
         hotelList.updateUI(hotelData!, indexPath.row)
-        hotelList.layer.cornerRadius = 5
-        hotelList.layer.masksToBounds = true
         return hotelList
     }
 }
