@@ -80,8 +80,14 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
                     self.data.save(self.token!)
                     self.data.saveLogin()
                     self.dismiss(animated: true, completion: nil)
-                } else {
-                    let message = "이메일 혹은 비밀번호가 잘못되었습니다."
+                } else if json["code"].intValue == 503 {
+                    let message = "회원정보가 존재하지 않습니다."
+                    let alert = UIAlertController(title: "로그인 오류", message: message, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                } else if json["code"].intValue == 508 {
+                    let message = "비밀번호가 일치하지 않습니다."
                     let alert = UIAlertController(title: "로그인 오류", message: message, preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
                     alert.addAction(okAction)
@@ -89,11 +95,11 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
                 }
             case .failure(let error):
                 print(error)
-                let message = "이메일 혹은 비밀번호가 잘못되었습니다."
-                let alert = UIAlertController(title: "로그인 오류", message: message, preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
-                alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
+//                let message = "이메일 혹은 비밀번호가 잘못되었습니다."
+//                let alert = UIAlertController(title: "로그인 오류", message: message, preferredStyle: .alert)
+//                let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+//                alert.addAction(okAction)
+//                self.present(alert, animated: true, completion: nil)
             }
         }
         
