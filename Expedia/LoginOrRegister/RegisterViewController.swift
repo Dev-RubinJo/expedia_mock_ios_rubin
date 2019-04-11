@@ -34,16 +34,21 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider, UITextFie
         lastNameTextField.placeholderFontScale = 0.77
         lastNameTextField.borderStyle = .roundedRect
         lastNameTextField.placeholderColor = .darkGray
+        lastNameTextField.keyboardType = .asciiCapable
+        
         
         firstNameTextField.placeholder = "  성(영문)"
         firstNameTextField.placeholderFontScale = 0.77
         firstNameTextField.borderStyle = .roundedRect
         firstNameTextField.placeholderColor = .darkGray
+        firstNameTextField.keyboardType = .asciiCapable
         
         emailTextField.placeholder = "  이메일 주소"
         emailTextField.placeholderFontScale = 0.77
         emailTextField.borderStyle = .roundedRect
         emailTextField.placeholderColor = .darkGray
+        emailTextField.autocapitalizationType = .none
+        emailTextField.keyboardType = .emailAddress
         
         passwordTextField.placeholder = "  비밀번호"
         passwordTextField.placeholderFontScale = 0.77
@@ -109,7 +114,14 @@ class RegisterViewController: UIViewController, IndicatorInfoProvider, UITextFie
                     alert.addAction(okAction)
                     self.present(alert, animated: true, completion: nil)
                 } else {
-                    
+                    let message = "로그인 해주세요."
+                    let alert = UIAlertController(title: "회원가입 성공", message: message, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+//                    let storyboard = self.storyboard!
+//                    let lrNVC = storyboard.instantiateViewController(withIdentifier: "loginOrRegister") as! LoginOrRegisterViewController
+//                    self.present(lrNVC, animated: true, completion: nil)
                 }
             case .failure(let error):
                 print(error)
