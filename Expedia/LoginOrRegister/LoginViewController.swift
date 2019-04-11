@@ -79,6 +79,8 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
                     self.data.loginStatus()
                     self.data.save(self.token!)
                     self.data.saveLogin()
+                    self.data.saveEmail(json["result"][0]["Email"].stringValue)
+                    self.data.saveName(json["result"][0]["Name"].stringValue)
                     self.dismiss(animated: true, completion: nil)
                 } else if json["code"].intValue == 503 {
                     let message = "회원정보가 존재하지 않습니다."

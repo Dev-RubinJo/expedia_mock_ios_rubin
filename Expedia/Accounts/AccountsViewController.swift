@@ -17,15 +17,21 @@ class AccountsViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var editAccountInfo: UIButton!
+    @IBOutlet weak var navigationTitle: UINavigationItem!
     
     
     func updateUI(isLogin: Bool) {
+        
+        
+        
         if isLogin == false {
+            self.navigationTitle.title = "계정"
             self.loginButton.isHidden = false
             self.loginButton.layer.cornerRadius = 10.0
             self.logoutButton.isHidden = true
             self.editAccountInfo.isHidden = true
         } else if isLogin == true {
+            self.navigationTitle.title = "\(self.data.loadName())님! 환영합니다!"
             self.loginButton.isHidden = true
             self.logoutButton.isHidden = false
             self.logoutButton.layer.cornerRadius = 10.0
