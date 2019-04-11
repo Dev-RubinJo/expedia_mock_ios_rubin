@@ -31,6 +31,7 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         emailTextField.placeholderFontScale = 0.77
         emailTextField.borderStyle = .roundedRect
         emailTextField.placeholderColor = .darkGray
+        emailTextField.keyboardType = .emailAddress
         
         
         passwordTextField.placeholder = "  비밀번호"
@@ -97,19 +98,9 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
                 }
             case .failure(let error):
                 print(error)
-//                let message = "이메일 혹은 비밀번호가 잘못되었습니다."
-//                let alert = UIAlertController(title: "로그인 오류", message: message, preferredStyle: .alert)
-//                let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
-//                alert.addAction(okAction)
-//                self.present(alert, animated: true, completion: nil)
             }
         }
-        
     }
-    
-//    @objc func loginButtonTest() {
-//        dismiss(animated: true, completion: nil)
-//    }
     
     // 상단 탭의 이름 설정.
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
