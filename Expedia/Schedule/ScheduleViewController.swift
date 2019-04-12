@@ -9,6 +9,8 @@
 import UIKit
 
 class ScheduleViewController: UIViewController {
+    
+    let data = LoginInfoData()
 
     
     @IBOutlet weak var topLabelView: UIView!
@@ -17,11 +19,21 @@ class ScheduleViewController: UIViewController {
     @IBOutlet weak var countryButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var afterLoginView: UIView!
+    @IBOutlet weak var afterLoginLabel: UILabel!
+    
     func updateUI() {
-        topLabelView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
-        URLAndCountryView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
-        loginButton.layer.cornerRadius = 10.0
-        loginButton.layer.masksToBounds = true
+        if self.data.loadLogin() == false {
+            self.afterLoginView.isHidden = true
+            self.topLabelView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
+            self.URLAndCountryView.layer.addBorder([.bottom], color: UIColor.lightGray, width: 1.0)
+            self.loginButton.layer.cornerRadius = 10.0
+            self.loginButton.layer.masksToBounds = true
+        } else if self.data.loadLogin() == true {
+            self.afterLoginView.isHidden = false
+            self.afterLoginLabel.text = "\(self.data.loadName())님 환영합니다!"
+        }
+        
         
     }
     
@@ -30,9 +42,9 @@ class ScheduleViewController: UIViewController {
         self.updateUI()
         // Do any additional setup after loading the view.
     }
-//    override func viewDidAppear(_ animated: Bool) {
-////        <#code#>
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        updateUI()
+    }
     
 
 }
