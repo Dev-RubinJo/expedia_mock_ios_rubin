@@ -31,6 +31,9 @@
 		43546EF02254E796005A0AB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EEF2254E796005A0AB7 /* RegisterViewController.swift */; };
 		43546EF32255A71A005A0AB7 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EF22255A71A005A0AB7 /* AccountsViewController.swift */; };
 		43AAB85C225E1BDE00186B55 /* SetPeopleNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAB85B225E1BDE00186B55 /* SetPeopleNumberViewController.swift */; };
+		43AAB85E225F2BC900186B55 /* HotelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAB85D225F2BC900186B55 /* HotelDetailViewController.swift */; };
+		43AAB864225F3BDE00186B55 /* HotelInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAB862225F3BDE00186B55 /* HotelInfoTableViewCell.swift */; };
+		43AAB865225F3BDE00186B55 /* HotelInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AAB863225F3BDE00186B55 /* HotelInfoTableViewCell.xib */; };
 		43FB1BD22257266B0004EB7B /* ReserveHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BD12257266B0004EB7B /* ReserveHotelViewController.swift */; };
 		43FB1BD422583E650004EB7B /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BD322583E650004EB7B /* SetLocationViewController.swift */; };
 		43FB1BD6225874B90004EB7B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB1BD5225874B90004EB7B /* Extension.swift */; };
@@ -106,6 +109,9 @@
 		43546EEF2254E796005A0AB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		43546EF22255A71A005A0AB7 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		43AAB85B225E1BDE00186B55 /* SetPeopleNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPeopleNumberViewController.swift; sourceTree = "<group>"; };
+		43AAB85D225F2BC900186B55 /* HotelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailViewController.swift; sourceTree = "<group>"; };
+		43AAB862225F3BDE00186B55 /* HotelInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelInfoTableViewCell.swift; sourceTree = "<group>"; };
+		43AAB863225F3BDE00186B55 /* HotelInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelInfoTableViewCell.xib; sourceTree = "<group>"; };
 		43FB1BD12257266B0004EB7B /* ReserveHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveHotelViewController.swift; sourceTree = "<group>"; };
 		43FB1BD322583E650004EB7B /* SetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationViewController.swift; sourceTree = "<group>"; };
 		43FB1BD5225874B90004EB7B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 				43546EC82252473F005A0AB7 /* Schedule */,
 				43546EF12255A6B9005A0AB7 /* Accounts */,
 				43546EEC2254E6E9005A0AB7 /* LoginOrRegister */,
+				43AAB85F225F3B1800186B55 /* HotelDetail */,
 				43546E8F2251C087005A0AB7 /* AppDelegate.swift */,
 				43546E932251C087005A0AB7 /* Main.storyboard */,
 				43546E962251C08A005A0AB7 /* Assets.xcassets */,
@@ -289,6 +296,24 @@
 			path = Accounts;
 			sourceTree = "<group>";
 		};
+		43AAB85F225F3B1800186B55 /* HotelDetail */ = {
+			isa = PBXGroup;
+			children = (
+				43AAB866225F3BEA00186B55 /* HotelDetailCell */,
+				43AAB85D225F2BC900186B55 /* HotelDetailViewController.swift */,
+			);
+			path = HotelDetail;
+			sourceTree = "<group>";
+		};
+		43AAB866225F3BEA00186B55 /* HotelDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				43AAB862225F3BDE00186B55 /* HotelInfoTableViewCell.swift */,
+				43AAB863225F3BDE00186B55 /* HotelInfoTableViewCell.xib */,
+			);
+			path = HotelDetailCell;
+			sourceTree = "<group>";
+		};
 		43FE888122599D2500BC2419 /* ReservateHotel */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +380,7 @@
 				43546E892251C087005A0AB7 /* Frameworks */,
 				43546E8A2251C087005A0AB7 /* Resources */,
 				4A41CBCDFCA76F9F2EFC22B6 /* [CP] Embed Pods Frameworks */,
+				97CE6FFE7AB0B81695E16270 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -463,6 +489,7 @@
 				43546EE122538670005A0AB7 /* DayDayPriceTableViewCell.xib in Resources */,
 				43FE88932259E6D900BC2419 /* DefaultTableViewCell.xib in Resources */,
 				43546ED522533136005A0AB7 /* EightPriceHotelTableViewCell.xib in Resources */,
+				43AAB865225F3BDE00186B55 /* HotelInfoTableViewCell.xib in Resources */,
 				43FD3EB6225BA16F0028F25A /* HotelListTableViewCell.xib in Resources */,
 				43546E952251C087005A0AB7 /* Main.storyboard in Resources */,
 			);
@@ -518,7 +545,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Expedia/Pods-Expedia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
@@ -530,7 +556,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
@@ -561,6 +586,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CE6FFE7AB0B81695E16270 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expedia/Pods-Expedia-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Expedia/Pods-Expedia-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DEF117D64EC624B4044D9CAB /* [CP] Check Pods Manifest.lock */ = {
@@ -595,6 +644,7 @@
 				43546ED422533136005A0AB7 /* EightPriceHotelTableViewCell.swift in Sources */,
 				43546EDC22537D3D005A0AB7 /* TodayPriceTableViewCell.swift in Sources */,
 				43546E922251C087005A0AB7 /* TripReservationViewController.swift in Sources */,
+				43AAB864225F3BDE00186B55 /* HotelInfoTableViewCell.swift in Sources */,
 				43FD3EAE225B5F950028F25A /* ToggleButton.swift in Sources */,
 				43546EF02254E796005A0AB7 /* RegisterViewController.swift in Sources */,
 				43FB1BD22257266B0004EB7B /* ReserveHotelViewController.swift in Sources */,
@@ -604,6 +654,7 @@
 				43FE88862259D86400BC2419 /* AccountsData.swift in Sources */,
 				43546EE42253A74D005A0AB7 /* LimitedDatePriceTableViewCell.swift in Sources */,
 				43FD3EAA225AEDBA0028F25A /* AccountsViewControllerBackUp.swift in Sources */,
+				43AAB85E225F2BC900186B55 /* HotelDetailViewController.swift in Sources */,
 				43FB1BD6225874B90004EB7B /* Extension.swift in Sources */,
 				43546ED022530262005A0AB7 /* BeforeLoginTableViewCell.swift in Sources */,
 				43FB1BD92258A8430004EB7B /* TripReservationCellData.swift in Sources */,
