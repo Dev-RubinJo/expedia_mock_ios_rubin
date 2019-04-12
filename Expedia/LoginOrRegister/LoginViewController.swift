@@ -32,6 +32,7 @@ class LoginViewController: UIViewController, IndicatorInfoProvider {
         emailTextField.borderStyle = .roundedRect
         emailTextField.placeholderColor = .darkGray
         emailTextField.keyboardType = .emailAddress
+        emailTextField.autocapitalizationType = .none
         
         
         passwordTextField.placeholder = "  비밀번호"
