@@ -7,27 +7,18 @@
 //
 
 import UIKit
-import CoreLocation
 
-class SetLocationViewController: UIViewController, CLLocationManagerDelegate {
+class SetLocationViewController: UIViewController {
     
-    var locationManager: CLLocationManager!
+    var location: String?
 
     
     @IBOutlet weak var backgroundView: UIView!
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    func getLocation() {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.startUpdatingLocation()
-    }
 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
