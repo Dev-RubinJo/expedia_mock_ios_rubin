@@ -14,7 +14,7 @@
 		43546E9A2251C08A005A0AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43546E982251C08A005A0AB7 /* LaunchScreen.storyboard */; };
 		43546EA52251C08A005A0AB7 /* ExpediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EA42251C08A005A0AB7 /* ExpediaTests.swift */; };
 		43546EB02251C08A005A0AB7 /* ExpediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */; };
-		43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EBD22523605005A0AB7 /* BasicRequired.swift */; };
+		43546EBE22523605005A0AB7 /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EBD22523605005A0AB7 /* SearchData.swift */; };
 		43546ECA225247B8005A0AB7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546EC9225247B8005A0AB7 /* ScheduleViewController.swift */; };
 		43546ED022530262005A0AB7 /* BeforeLoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43546ECE22530262005A0AB7 /* BeforeLoginTableViewCell.swift */; };
 		43546ED122530262005A0AB7 /* BeforeLoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43546ECF22530262005A0AB7 /* BeforeLoginTableViewCell.xib */; };
@@ -92,7 +92,7 @@
 		43546EAB2251C08A005A0AB7 /* ExpediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43546EAF2251C08A005A0AB7 /* ExpediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpediaUITests.swift; sourceTree = "<group>"; };
 		43546EB12251C08A005A0AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43546EBD22523605005A0AB7 /* BasicRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequired.swift; sourceTree = "<group>"; };
+		43546EBD22523605005A0AB7 /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
 		43546EC9225247B8005A0AB7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		43546ECE22530262005A0AB7 /* BeforeLoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeLoginTableViewCell.swift; sourceTree = "<group>"; };
 		43546ECF22530262005A0AB7 /* BeforeLoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeforeLoginTableViewCell.xib; sourceTree = "<group>"; };
@@ -206,7 +206,6 @@
 				43546E962251C08A005A0AB7 /* Assets.xcassets */,
 				43546E982251C08A005A0AB7 /* LaunchScreen.storyboard */,
 				43546E9B2251C08A005A0AB7 /* Info.plist */,
-				43546EBD22523605005A0AB7 /* BasicRequired.swift */,
 				43FB1BD5225874B90004EB7B /* Extension.swift */,
 				43FD3EAD225B5F950028F25A /* ToggleButton.swift */,
 			);
@@ -320,6 +319,7 @@
 				43FB1BD12257266B0004EB7B /* ReserveHotelViewController.swift */,
 				43FB1BD322583E650004EB7B /* SetLocationViewController.swift */,
 				43AAB85B225E1BDE00186B55 /* SetPeopleNumberViewController.swift */,
+				43546EBD22523605005A0AB7 /* SearchData.swift */,
 			);
 			path = ReservateHotel;
 			sourceTree = "<group>";
@@ -669,7 +669,7 @@
 				43FE888422599D7700BC2419 /* EightPriceHotelViewController.swift in Sources */,
 				43FE88922259E6D900BC2419 /* DefaultTableViewCell.swift in Sources */,
 				43FE888E2259E05C00BC2419 /* WithRightArrowTableViewCell.swift in Sources */,
-				43546EBE22523605005A0AB7 /* BasicRequired.swift in Sources */,
+				43546EBE22523605005A0AB7 /* SearchData.swift in Sources */,
 				43546ECA225247B8005A0AB7 /* ScheduleViewController.swift in Sources */,
 				43546EEE2254E77D005A0AB7 /* LoginViewController.swift in Sources */,
 			);
