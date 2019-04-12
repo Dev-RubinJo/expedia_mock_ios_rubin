@@ -1,13 +1,5 @@
 PODS:
   - Alamofire (4.8.1)
-  - GoogleMaps (3.0.3):
-    - GoogleMaps/Maps (= 3.0.3)
-  - GoogleMaps/Base (3.0.3)
-  - GoogleMaps/Maps (3.0.3):
-    - GoogleMaps/Base
-  - GooglePlaces (3.0.3):
-    - GoogleMaps/Base (= 3.0.3)
-  - ObjectMapper (3.4.2)
   - SegementSlide (2.0)
   - SnapKit (4.2.0)
   - SwiftyJSON (4.2.0)
@@ -16,9 +8,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
-  - GoogleMaps
-  - GooglePlaces
-  - ObjectMapper (~> 3.4)
   - SegementSlide
   - SnapKit
   - SwiftyJSON
@@ -28,9 +17,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - GoogleMaps
-    - GooglePlaces
-    - ObjectMapper
     - SegementSlide
     - SnapKit
     - SwiftyJSON
@@ -39,15 +25,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
-  GooglePlaces: f09e76993c9c3ee4af8f4f7f535bb94d6aa3b649
-  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   SegementSlide: aa376424a196e11846cb2f58428e10648849d1ac
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
   XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: 07aca985809dd5aed0a7e09a27fedd4ed888178b
+PODFILE CHECKSUM: 16b75f88058b7f01fddf3e08205079668e7dbeb0
 
 COCOAPODS: 1.6.1

@@ -5,14 +5,11 @@ target 'Expedia' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire', '~>4.7'
-  pod 'ObjectMapper', '~>3.4'
   pod 'SwiftyJSON'
   pod 'XLPagerTabStrip'
   pod 'SegementSlide'
   pod 'TextFieldEffects'
   pod 'SnapKit'
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
   # Pods for Expedia
 
   target 'ExpediaTests' do
