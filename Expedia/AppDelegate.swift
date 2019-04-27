@@ -7,15 +7,34 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let loginInfo = LoginInfoData()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 앱 실행 시에 토큰 확인
+        if loginInfo.loadLogin() {
+            let headers = ["x-access-token": "\(loginInfo.load())" ,"Content-Type": "application/json"]
+            let checkTokenURL = URL(string: "http://www.kaca5.com/expedia/token")
+            Alamofire.request(checkTokenURL!, method: .get, headers: headers).validate().responseJSON { response in
+                switch response.result {
+                case .success(let data):
+                    let json = JSON(data)
+                    if json["code"].intValue == 500 {
+                        self.loginInfo.logoutStatus()
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
         return true
     }
 
